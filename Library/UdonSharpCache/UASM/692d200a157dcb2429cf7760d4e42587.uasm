@@ -1,0 +1,297 @@
+.data_start
+    .export targetLights
+    .export captureFrameInterval
+    .export proxyTexture
+    .export targetRenderTexture
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    targetLights: %UnityEngineLightArray, null
+    captureFrameInterval: %SystemInt32, null
+    proxyTexture: %UnityEngineTexture2D, null
+    targetRenderTexture: %UnityEngineRenderTexture, null
+    _camera: %UnityEngineCamera, null
+    _captureFrameCount: %SystemInt32, null
+    _previousColor: %UnityEngineColor, null
+    _lastCapturedColor: %UnityEngineColor, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __this_UnityEngineTransform_0: %UnityEngineTransform, this
+    __const_SystemType_0: %SystemType, null
+    __const_SystemObject_0: %SystemObject, null
+    __const_SystemInt32_0: %SystemInt32, null
+    __gintnl_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemInt32_1: %SystemInt32, null
+    __gintnl_SystemUInt32_1: %SystemUInt32, null
+    __const_SystemSingle_0: %SystemSingle, null
+    __intnl_UnityEngineRenderTexture_0: %UnityEngineRenderTexture, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+    __intnl_UnityEngineObject_1: %UnityEngineObject, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemInt32_1: %SystemInt32, null
+    __intnl_SystemSingle_1: %SystemSingle, null
+    __intnl_UnityEngineRect_0: %UnityEngineRect, null
+    __lcl_pixels_UnityEngineColorArray_0: %UnityEngineColorArray, null
+    __lcl_r_SystemSingle_0: %SystemSingle, null
+    __lcl_g_SystemSingle_0: %SystemSingle, null
+    __lcl_b_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemInt32_2: %SystemInt32, null
+    __intnl_SystemSingle_2: %SystemSingle, null
+    __intnl_SystemInt32_3: %SystemInt32, null
+    __intnl_SystemSingle_3: %SystemSingle, null
+    __intnl_SystemInt32_4: %SystemInt32, null
+    __intnl_SystemSingle_4: %SystemSingle, null
+    __lcl_i_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemBoolean_2: %SystemBoolean, null
+    __intnl_UnityEngineColor_0: %UnityEngineColor, null
+    __intnl_UnityEngineColor_1: %UnityEngineColor, null
+    __intnl_UnityEngineColor_2: %UnityEngineColor, null
+    __intnl_SystemInt32_5: %SystemInt32, null
+    __intnl_SystemInt32_6: %SystemInt32, null
+    __intnl_SystemBoolean_3: %SystemBoolean, null
+    __lcl_targetLight_UnityEngineLight_0: %UnityEngineLight, null
+    __intnl_SystemSingle_5: %SystemSingle, null
+    __intnl_SystemSingle_6: %SystemSingle, null
+    __intnl_SystemSingle_7: %SystemSingle, null
+    __intnl_UnityEngineColor_3: %UnityEngineColor, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# DisplayLight.Start()
+# 
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __const_SystemType_0
+        PUSH, _camera
+        EXTERN, "UnityEngineComponent.__GetComponent__T"
+        PUSH, _camera
+        PUSH, __intnl_UnityEngineRenderTexture_0
+        EXTERN, "UnityEngineCamera.__get_targetTexture__UnityEngineRenderTexture"
+        PUSH, __intnl_UnityEngineRenderTexture_0
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x000000b0
+        PUSH, _camera
+        PUSH, targetRenderTexture
+        EXTERN, "UnityEngineCamera.__set_targetTexture__UnityEngineRenderTexture__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onPostRender
+    _onPostRender:
+        PUSH, __const_SystemUInt32_0
+# 
+# DisplayLight.OnPostRender()
+# 
+        PUSH, _captureFrameCount
+        PUSH, captureFrameInterval
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x00000128
+        PUSH, __const_SystemInt32_0
+        PUSH, _captureFrameCount
+        COPY
+        PUSH, __gintnl_SystemUInt32_0
+# Calling DisplayLight.Capture()
+        JUMP, 0x00000174
+        JUMP, 0x00000148
+        PUSH, _captureFrameCount
+        PUSH, __const_SystemInt32_1
+        PUSH, _captureFrameCount
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __gintnl_SystemUInt32_1
+# Calling DisplayLight.UpdateLight()
+        JUMP, 0x00000554
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __const_SystemUInt32_0
+# 
+# DisplayLight.Capture()
+# 
+        PUSH, proxyTexture
+        PUSH, __intnl_SystemInt32_0
+        EXTERN, "UnityEngineTexture.__get_width__SystemInt32"
+        PUSH, __intnl_SystemInt32_0
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, proxyTexture
+        PUSH, __intnl_SystemInt32_1
+        EXTERN, "UnityEngineTexture.__get_height__SystemInt32"
+        PUSH, __intnl_SystemInt32_1
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __const_SystemSingle_0
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemSingle_0
+        PUSH, __intnl_SystemSingle_1
+        PUSH, __intnl_UnityEngineRect_0
+        EXTERN, "UnityEngineRect.__ctor__SystemSingle_SystemSingle_SystemSingle_SystemSingle__UnityEngineRect"
+        PUSH, proxyTexture
+        PUSH, __intnl_UnityEngineRect_0
+        PUSH, __const_SystemInt32_0
+        PUSH, __const_SystemInt32_0
+        EXTERN, "UnityEngineTexture2D.__ReadPixels__UnityEngineRect_SystemInt32_SystemInt32__SystemVoid"
+        PUSH, proxyTexture
+        PUSH, __lcl_pixels_UnityEngineColorArray_0
+        EXTERN, "UnityEngineTexture2D.__GetPixels__UnityEngineColorArray"
+        PUSH, __const_SystemSingle_0
+        PUSH, __lcl_r_SystemSingle_0
+        COPY
+        PUSH, __const_SystemSingle_0
+        PUSH, __lcl_g_SystemSingle_0
+        COPY
+        PUSH, __const_SystemSingle_0
+        PUSH, __lcl_b_SystemSingle_0
+        COPY
+        PUSH, __const_SystemInt32_0
+        PUSH, __lcl_i_SystemInt32_0
+        COPY
+        PUSH, __lcl_pixels_UnityEngineColorArray_0
+        PUSH, __intnl_SystemInt32_2
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_SystemInt32_2
+        PUSH, __intnl_SystemBoolean_2
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x0000040c
+        PUSH, __lcl_pixels_UnityEngineColorArray_0
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_UnityEngineColor_0
+        EXTERN, "UnityEngineColorArray.__Get__SystemInt32__UnityEngineColor"
+        PUSH, __intnl_UnityEngineColor_0
+        PUSH, __intnl_SystemSingle_2
+        EXTERN, "UnityEngineColor.__get_r__SystemSingle"
+        PUSH, __lcl_r_SystemSingle_0
+        PUSH, __intnl_SystemSingle_2
+        PUSH, __lcl_r_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_pixels_UnityEngineColorArray_0
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_UnityEngineColor_1
+        EXTERN, "UnityEngineColorArray.__Get__SystemInt32__UnityEngineColor"
+        PUSH, __intnl_UnityEngineColor_1
+        PUSH, __intnl_SystemSingle_3
+        EXTERN, "UnityEngineColor.__get_g__SystemSingle"
+        PUSH, __lcl_g_SystemSingle_0
+        PUSH, __intnl_SystemSingle_3
+        PUSH, __lcl_g_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_pixels_UnityEngineColorArray_0
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __intnl_UnityEngineColor_2
+        EXTERN, "UnityEngineColorArray.__Get__SystemInt32__UnityEngineColor"
+        PUSH, __intnl_UnityEngineColor_2
+        PUSH, __intnl_SystemSingle_4
+        EXTERN, "UnityEngineColor.__get_b__SystemSingle"
+        PUSH, __lcl_b_SystemSingle_0
+        PUSH, __intnl_SystemSingle_4
+        PUSH, __lcl_b_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_i_SystemInt32_0
+        PUSH, __const_SystemInt32_1
+        PUSH, __lcl_i_SystemInt32_0
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00000294
+        PUSH, __lcl_pixels_UnityEngineColorArray_0
+        PUSH, __intnl_SystemInt32_2
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __intnl_SystemInt32_2
+        PUSH, __intnl_SystemSingle_2
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __lcl_r_SystemSingle_0
+        PUSH, __intnl_SystemSingle_2
+        PUSH, __lcl_r_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_pixels_UnityEngineColorArray_0
+        PUSH, __intnl_SystemInt32_3
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __intnl_SystemInt32_3
+        PUSH, __intnl_SystemSingle_3
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __lcl_g_SystemSingle_0
+        PUSH, __intnl_SystemSingle_3
+        PUSH, __lcl_g_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_pixels_UnityEngineColorArray_0
+        PUSH, __intnl_SystemInt32_4
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __intnl_SystemInt32_4
+        PUSH, __intnl_SystemSingle_4
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __lcl_b_SystemSingle_0
+        PUSH, __intnl_SystemSingle_4
+        PUSH, __lcl_b_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, _lastCapturedColor
+        PUSH, _previousColor
+        COPY
+        PUSH, __lcl_r_SystemSingle_0
+        PUSH, __lcl_g_SystemSingle_0
+        PUSH, __lcl_b_SystemSingle_0
+        PUSH, _lastCapturedColor
+        EXTERN, "UnityEngineColor.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineColor"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __const_SystemUInt32_0
+# 
+# DisplayLight.UpdateLight()
+# 
+        PUSH, targetLights
+        PUSH, __intnl_SystemInt32_5
+        EXTERN, "SystemArray.__get_Length__SystemInt32"
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemInt32_6
+        COPY
+        PUSH, __intnl_SystemInt32_6
+        PUSH, __intnl_SystemInt32_5
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x00000688
+        PUSH, targetLights
+        PUSH, __intnl_SystemInt32_6
+        PUSH, __lcl_targetLight_UnityEngineLight_0
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, _captureFrameCount
+        PUSH, __intnl_SystemSingle_5
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, captureFrameInterval
+        PUSH, __intnl_SystemSingle_6
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __intnl_SystemSingle_5
+        PUSH, __intnl_SystemSingle_6
+        PUSH, __intnl_SystemSingle_7
+        EXTERN, "SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, _previousColor
+        PUSH, _lastCapturedColor
+        PUSH, __intnl_SystemSingle_7
+        PUSH, __intnl_UnityEngineColor_3
+        EXTERN, "UnityEngineColor.__Lerp__UnityEngineColor_UnityEngineColor_SystemSingle__UnityEngineColor"
+        PUSH, __lcl_targetLight_UnityEngineLight_0
+        PUSH, __intnl_UnityEngineColor_3
+        EXTERN, "UnityEngineLight.__set_color__UnityEngineColor__SystemVoid"
+        PUSH, __intnl_SystemInt32_6
+        PUSH, __const_SystemInt32_1
+        PUSH, __intnl_SystemInt32_6
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00000580
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

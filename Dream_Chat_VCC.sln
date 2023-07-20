@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{44b762d1-6b13-f2cb-5479-61fae303d421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BakeryRuntimeAssembly", "BakeryRuntimeAssembly.csproj", "{76b4cc22-a530-8028-23d6-7cb9639cbb22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThryAssemblyDefinition", "ThryAssemblyDefinition.csproj", "{444453db-2efe-292f-b71d-121e47888467}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BakeryEditorAssembly", "BakeryEditorAssembly.csproj", "{6f45b141-7515-03e9-713a-34d8183388f7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{0a555ac2-302d-26c5-ce10-8f99c905ec86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poi.Tools", "Poi.Tools.csproj", "{d0521808-49fc-c39c-3501-dd620f3a65b2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44b762d1-6b13-f2cb-5479-61fae303d421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44b762d1-6b13-f2cb-5479-61fae303d421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76b4cc22-a530-8028-23d6-7cb9639cbb22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76b4cc22-a530-8028-23d6-7cb9639cbb22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444453db-2efe-292f-b71d-121e47888467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444453db-2efe-292f-b71d-121e47888467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6f45b141-7515-03e9-713a-34d8183388f7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6f45b141-7515-03e9-713a-34d8183388f7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0a555ac2-302d-26c5-ce10-8f99c905ec86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0a555ac2-302d-26c5-ce10-8f99c905ec86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d0521808-49fc-c39c-3501-dd620f3a65b2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d0521808-49fc-c39c-3501-dd620f3a65b2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

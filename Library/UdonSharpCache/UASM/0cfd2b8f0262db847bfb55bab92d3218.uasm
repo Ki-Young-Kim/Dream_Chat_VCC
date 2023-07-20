@@ -1,0 +1,253 @@
+.data_start
+    .export slider
+    .export muteIcon
+    .export zeroVolumeIcon
+    .export lowVolumeIcon
+    .export HighVolumeIcon
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    controlHandler: %VRCUdonUdonBehaviour, null
+    slider: %UnityEngineUISlider, null
+    muteIcon: %UnityEngineGameObject, null
+    zeroVolumeIcon: %UnityEngineGameObject, null
+    lowVolumeIcon: %UnityEngineGameObject, null
+    HighVolumeIcon: %UnityEngineGameObject, null
+    _muted: %SystemBoolean, null
+    _sliderValueChanging: %SystemBoolean, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __gintnl_SystemUInt32_0: %SystemUInt32, null
+    __0_handler__param: %VRCUdonUdonBehaviour, null
+    __0_muted__param: %SystemBoolean, null
+    __gintnl_SystemUInt32_1: %SystemUInt32, null
+    __0_volume__param: %SystemSingle, null
+    __gintnl_SystemUInt32_2: %SystemUInt32, null
+    __const_SystemBoolean_0: %SystemBoolean, null
+    __const_SystemString_0: %SystemString, null
+    __const_SystemString_1: %SystemString, null
+    __const_SystemBoolean_1: %SystemBoolean, null
+    __gintnl_SystemUInt32_3: %SystemUInt32, null
+    __const_SystemString_2: %SystemString, null
+    __const_SystemString_3: %SystemString, null
+    __const_SystemSingle_0: %SystemSingle, null
+    __const_SystemSingle_1: %SystemSingle, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_UnityEngineUISlider_0: %UnityEngineUISlider, null
+    __intnl_SystemBoolean_2: %SystemBoolean, null
+    __intnl_SystemBoolean_3: %SystemBoolean, null
+    __intnl_SystemBoolean_4: %SystemBoolean, null
+    __intnl_SystemSingle_1: %SystemSingle, null
+    __intnl_SystemBoolean_5: %SystemBoolean, null
+    __intnl_SystemSingle_2: %SystemSingle, null
+    __intnl_SystemBoolean_6: %SystemBoolean, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VolumeController.Start()
+# 
+        PUSH, __gintnl_SystemUInt32_0
+# Calling UdonSharp.Video.VolumeController.UpdateVolumeIcon()
+        JUMP, 0x000002B8
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_SetControlHandler
+    __0_SetControlHandler:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VolumeController.SetControlHandler(UdonSharp.Video.VideoControlHandler)
+# 
+        PUSH, __0_handler__param
+        PUSH, controlHandler
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_SetMuted
+    __0_SetMuted:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VolumeController.SetMuted(bool)
+# 
+        PUSH, __0_muted__param
+        PUSH, _muted
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemBoolean.__op_Inequality__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x000000b8
+        PUSH, __0_muted__param
+        PUSH, _muted
+        COPY
+        PUSH, __gintnl_SystemUInt32_1
+# Calling UdonSharp.Video.VolumeController.UpdateVolumeIcon()
+        JUMP, 0x000002B8
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_SetVolume
+    __0_SetVolume:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VolumeController.SetVolume(float)
+# 
+        PUSH, _sliderValueChanging
+        JUMP_IF_FALSE, 0x000000ec
+        JUMP, 0x00000114
+        PUSH, slider
+        PUSH, __0_volume__param
+        EXTERN, "UnityEngineUISlider.__set_value__SystemSingle__SystemVoid"
+        PUSH, __gintnl_SystemUInt32_2
+# Calling UdonSharp.Video.VolumeController.UpdateVolumeIcon()
+        JUMP, 0x000002B8
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnSliderValueChanged
+    OnSliderValueChanged:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VolumeController.OnSliderValueChanged()
+# 
+        PUSH, __const_SystemBoolean_0
+        PUSH, _sliderValueChanging
+        COPY
+        PUSH, controlHandler
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x000001d0
+        PUSH, slider
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "UnityEngineUISlider.__get_value__SystemSingle"
+# Cow dirty
+        PUSH, slider
+        PUSH, __intnl_UnityEngineUISlider_0
+        COPY
+        PUSH, controlHandler
+        PUSH, __const_SystemString_0
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, controlHandler
+        PUSH, __const_SystemString_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __const_SystemBoolean_1
+        PUSH, _sliderValueChanging
+        COPY
+        PUSH, __gintnl_SystemUInt32_3
+# Calling UdonSharp.Video.VolumeController.UpdateVolumeIcon()
+        JUMP, 0x000002B8
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnMutePressed
+    OnMutePressed:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VolumeController.OnMutePressed()
+# 
+        PUSH, controlHandler
+        PUSH, __intnl_SystemBoolean_2
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x0000029c
+        PUSH, _muted
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+# Cow dirty
+        PUSH, _muted
+        PUSH, __intnl_SystemBoolean_4
+        COPY
+        PUSH, controlHandler
+        PUSH, __const_SystemString_2
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, controlHandler
+        PUSH, __const_SystemString_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VolumeController.UpdateVolumeIcon()
+# 
+        PUSH, _muted
+        JUMP_IF_FALSE, 0x00000330
+        PUSH, muteIcon
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, zeroVolumeIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, lowVolumeIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, HighVolumeIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        JUMP, 0x000004F0
+        PUSH, slider
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "UnityEngineUISlider.__get_value__SystemSingle"
+        PUSH, __intnl_SystemSingle_1
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemBoolean_5
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_5
+        JUMP_IF_FALSE, 0x000003e0
+        PUSH, muteIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, zeroVolumeIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, lowVolumeIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, HighVolumeIcon
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        JUMP, 0x000004F0
+        PUSH, slider
+        PUSH, __intnl_SystemSingle_2
+        EXTERN, "UnityEngineUISlider.__get_value__SystemSingle"
+        PUSH, __intnl_SystemSingle_2
+        PUSH, __const_SystemSingle_1
+        PUSH, __intnl_SystemBoolean_6
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_6
+        JUMP_IF_FALSE, 0x00000490
+        PUSH, muteIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, zeroVolumeIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, lowVolumeIcon
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, HighVolumeIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        JUMP, 0x000004F0
+        PUSH, muteIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, zeroVolumeIcon
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, lowVolumeIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, HighVolumeIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

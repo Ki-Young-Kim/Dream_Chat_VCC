@@ -1,0 +1,1421 @@
+.data_start
+    .export targetVideoPlayer
+    .export urlField
+    .export urlFieldPlaceholderText
+    .export statusTextField
+    .export statusTextDropShadow
+    .export progressSlider
+    .export lockGraphic
+    .export masterLockedIcon
+    .export masterUnlockedIcon
+    .export masterField
+    .export ownerField
+    .export currentURLField
+    .export previousURLField
+    .export pauseStopObject
+    .export playObject
+    .export pauseIcon
+    .export stopIcon
+    .export loopButtonBackground
+    .export loopButtonIcon
+    .export syncController
+    .export volumeController
+    .export redGraphicColor
+    .export whiteGraphicColor
+    .export buttonBackgroundColor
+    .export buttonActivatedColor
+    .export iconInvertedColor
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    targetVideoPlayer: %VRCUdonUdonBehaviour, null
+    urlField: %VRCSDK3ComponentsVRCUrlInputField, null
+    urlFieldPlaceholderText: %UnityEngineUIText, null
+    statusTextField: %UnityEngineUIText, null
+    statusTextDropShadow: %UnityEngineUIText, null
+    progressSlider: %UnityEngineUISlider, null
+    lockGraphic: %UnityEngineUIGraphic, null
+    masterLockedIcon: %UnityEngineGameObject, null
+    masterUnlockedIcon: %UnityEngineGameObject, null
+    masterField: %UnityEngineUIText, null
+    ownerField: %UnityEngineUIText, null
+    currentURLField: %UnityEngineUIInputField, null
+    previousURLField: %UnityEngineUIInputField, null
+    pauseStopObject: %UnityEngineGameObject, null
+    playObject: %UnityEngineGameObject, null
+    pauseIcon: %UnityEngineGameObject, null
+    stopIcon: %UnityEngineGameObject, null
+    loopButtonBackground: %UnityEngineUIGraphic, null
+    loopButtonIcon: %UnityEngineUIGraphic, null
+    syncController: %VRCUdonUdonBehaviour, null
+    volumeController: %VRCUdonUdonBehaviour, null
+    redGraphicColor: %UnityEngineColor, null
+    whiteGraphicColor: %UnityEngineColor, null
+    buttonBackgroundColor: %UnityEngineColor, null
+    buttonActivatedColor: %UnityEngineColor, null
+    iconInvertedColor: %UnityEngineColor, null
+    _currentStatusText: %SystemString, null
+    _lastTime: %SystemInt32, null
+    _draggingSlider: %SystemBoolean, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __this_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, this
+    __const_SystemString_0: %SystemString, null
+    __const_SystemString_1: %SystemString, null
+    __gintnl_SystemUInt32_0: %SystemUInt32, null
+    __gintnl_SystemUInt32_1: %SystemUInt32, null
+    __this_VRCUdonUdonBehaviour_1: %VRCUdonUdonBehaviour, this
+    __const_SystemString_2: %SystemString, null
+    __const_SystemString_3: %SystemString, null
+    __this_VRCUdonUdonBehaviour_2: %VRCUdonUdonBehaviour, this
+    __const_SystemString_4: %SystemString, null
+    __const_SystemString_5: %SystemString, null
+    __0__onOwnershipRequest__ret: %SystemBoolean, null
+    onOwnershipRequestRequester: %VRCSDKBaseVRCPlayerApi, null
+    onOwnershipRequestNewOwner: %VRCSDKBaseVRCPlayerApi, null
+    __const_SystemBoolean_0: %SystemBoolean, null
+    __returnValue: %SystemObject, null
+    __gintnl_SystemUInt32_2: %SystemUInt32, null
+    onPlayerLeftPlayer: %VRCSDKBaseVRCPlayerApi, null
+    __gintnl_SystemUInt32_3: %SystemUInt32, null
+    __gintnl_SystemUInt32_4: %SystemUInt32, null
+    __gintnl_SystemUInt32_5: %SystemUInt32, null
+    __0_locked__param: %SystemBoolean, null
+    __const_SystemString_6: %SystemString, null
+    __const_SystemString_7: %SystemString, null
+    __0_newPlayer__param: %VRCUdonUdonBehaviour, null
+    __this_VRCUdonUdonBehaviour_3: %VRCUdonUdonBehaviour, this
+    __this_VRCUdonUdonBehaviour_4: %VRCUdonUdonBehaviour, this
+    __gintnl_SystemUInt32_6: %SystemUInt32, null
+    __gintnl_SystemUInt32_7: %SystemUInt32, null
+    __0_newStatus__param: %SystemString, null
+    __const_SystemString_8: %SystemString, null
+    __const_SystemInt32_0: %SystemInt32, null
+    __const_SystemBoolean_1: %SystemBoolean, null
+    __const_SystemString_9: %SystemString, null
+    __const_SystemString_10: %SystemString, null
+    __const_SystemString_11: %SystemString, null
+    __const_SystemString_12: %SystemString, null
+    __const_SystemString_13: %SystemString, null
+    __0_paused__param: %SystemBoolean, null
+    __const_SystemString_14: %SystemString, null
+    __const_SystemString_15: %SystemString, null
+    __0_looping__param: %SystemBoolean, null
+    __0_volume__param: %SystemSingle, null
+    __const_SystemString_16: %SystemString, null
+    __const_SystemString_17: %SystemString, null
+    __0_muted__param: %SystemBoolean, null
+    __const_SystemString_18: %SystemString, null
+    __const_SystemString_19: %SystemString, null
+    __1_volume__param: %SystemSingle, null
+    __1_muted__param: %SystemBoolean, null
+    __0_url__param: %VRCSDKBaseVRCUrl, null
+    __const_SystemString_20: %SystemString, null
+    __const_SystemString_21: %SystemString, null
+    __const_SystemString_22: %SystemString, null
+    __const_SystemString_23: %SystemString, null
+    __const_SystemString_24: %SystemString, null
+    __const_SystemString_25: %SystemString, null
+    __const_SystemString_26: %SystemString, null
+    __const_SystemString_27: %SystemString, null
+    __gintnl_SystemUInt32_8: %SystemUInt32, null
+    __0___0_GetFormattedTime__ret: %SystemString, null
+    __0_time__param: %SystemTimeSpan, null
+    __const_SystemString_28: %SystemString, null
+    __const_SystemString_29: %SystemString, null
+    __const_SystemSingle_0: %SystemSingle, null
+    __const_SystemSingle_1: %SystemSingle, null
+    __gintnl_SystemUInt32_9: %SystemUInt32, null
+    __gintnl_SystemUInt32_10: %SystemUInt32, null
+    __const_SystemString_30: %SystemString, null
+    __const_SystemString_31: %SystemString, null
+    __const_SystemString_32: %SystemString, null
+    __const_SystemString_33: %SystemString, null
+    __const_SystemString_34: %SystemString, null
+    __const_SystemString_35: %SystemString, null
+    __const_SystemString_36: %SystemString, null
+    __const_SystemString_37: %SystemString, null
+    __const_SystemString_38: %SystemString, null
+    __const_SystemString_39: %SystemString, null
+    __const_SystemString_40: %SystemString, null
+    __const_SystemString_41: %SystemString, null
+    __const_SystemString_42: %SystemString, null
+    __const_SystemString_43: %SystemString, null
+    __const_SystemString_44: %SystemString, null
+    __const_SystemString_45: %SystemString, null
+    __const_SystemString_46: %SystemString, null
+    __const_SystemString_47: %SystemString, null
+    __const_SystemString_48: %SystemString, null
+    __const_SystemString_49: %SystemString, null
+    __const_SystemString_50: %SystemString, null
+    __const_SystemString_51: %SystemString, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_SystemObject_0: %SystemObject, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+    __intnl_UnityEngineObject_1: %UnityEngineObject, null
+    __intnl_SystemBoolean_2: %SystemBoolean, null
+    __intnl_SystemBoolean_3: %SystemBoolean, null
+    __intnl_SystemBoolean_4: %SystemBoolean, null
+    __intnl_SystemBoolean_5: %SystemBoolean, null
+    __intnl_SystemBoolean_6: %SystemBoolean, null
+    __intnl_SystemBoolean_7: %SystemBoolean, null
+    __intnl_UnityEngineGameObject_0: %UnityEngineGameObject, null
+    __intnl_VRCUdonUdonBehaviour_1: %VRCUdonUdonBehaviour, null
+    __intnl_SystemBoolean_8: %SystemBoolean, null
+    __intnl_SystemObject_1: %SystemObject, null
+    __intnl_SystemBoolean_9: %SystemBoolean, null
+    __intnl_SystemBoolean_10: %SystemBoolean, null
+    __intnl_SystemString_0: %SystemString, null
+    __intnl_UnityEngineGameObject_1: %UnityEngineGameObject, null
+    __intnl_VRCSDKBaseVRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemString_1: %SystemString, null
+    __lcl_videoMode_SystemBoolean_0: %SystemBoolean, null
+    __intnl_VRCUdonUdonBehaviour_2: %VRCUdonUdonBehaviour, null
+    __intnl_SystemBoolean_11: %SystemBoolean, null
+    __intnl_SystemObject_2: %SystemObject, null
+    __intnl_SystemBoolean_12: %SystemBoolean, null
+    __intnl_SystemBoolean_13: %SystemBoolean, null
+    __intnl_SystemBoolean_14: %SystemBoolean, null
+    __intnl_SystemBoolean_15: %SystemBoolean, null
+    __intnl_SystemBoolean_16: %SystemBoolean, null
+    __intnl_SystemBoolean_17: %SystemBoolean, null
+    __intnl_SystemBoolean_18: %SystemBoolean, null
+    __intnl_SystemBoolean_19: %SystemBoolean, null
+    __intnl_SystemBoolean_20: %SystemBoolean, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemBoolean_21: %SystemBoolean, null
+    __intnl_SystemBoolean_22: %SystemBoolean, null
+    __intnl_SystemSingle_1: %SystemSingle, null
+    __intnl_SystemBoolean_23: %SystemBoolean, null
+    __intnl_SystemBoolean_24: %SystemBoolean, null
+    __intnl_SystemBoolean_25: %SystemBoolean, null
+    __intnl_SystemString_2: %SystemString, null
+    __intnl_SystemString_3: %SystemString, null
+    __intnl_SystemBoolean_26: %SystemBoolean, null
+    __intnl_VRCUdonUdonBehaviour_3: %VRCUdonUdonBehaviour, null
+    __intnl_SystemBoolean_27: %SystemBoolean, null
+    __intnl_VRCUdonUdonBehaviour_4: %VRCUdonUdonBehaviour, null
+    __intnl_VRCUdonUdonBehaviour_5: %VRCUdonUdonBehaviour, null
+    __intnl_SystemBoolean_28: %SystemBoolean, null
+    __intnl_SystemObject_3: %SystemObject, null
+    __lcl_manager_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, null
+    __intnl_VRCUdonUdonBehaviour_6: %VRCUdonUdonBehaviour, null
+    __intnl_VRCUdonUdonBehaviour_7: %VRCUdonUdonBehaviour, null
+    __intnl_SystemObject_4: %SystemObject, null
+    __lcl_duration_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_2: %SystemSingle, null
+    __intnl_SystemObject_5: %SystemObject, null
+    __lcl_currentProgress_SystemSingle_0: %SystemSingle, null
+    __lcl_currentTime_SystemSingle_0: %SystemSingle, null
+    __lcl_currentTimeStr_SystemString_0: %SystemString, null
+    __intnl_SystemDouble_0: %SystemDouble, null
+    __intnl_SystemTimeSpan_0: %SystemTimeSpan, null
+    __intnl_SystemBoolean_29: %SystemBoolean, null
+    __intnl_SystemBoolean_30: %SystemBoolean, null
+    __intnl_SystemSingle_3: %SystemSingle, null
+    __intnl_SystemObject_6: %SystemObject, null
+    __lcl_currentTimeInt_SystemInt32_0: %SystemInt32, null
+    __intnl_UnityEngineGameObject_2: %UnityEngineGameObject, null
+    __intnl_SystemSingle_4: %SystemSingle, null
+    __intnl_SystemSingle_5: %SystemSingle, null
+    __intnl_SystemBoolean_31: %SystemBoolean, null
+    __intnl_SystemBoolean_32: %SystemBoolean, null
+    __intnl_SystemBoolean_33: %SystemBoolean, null
+    __intnl_SystemBoolean_34: %SystemBoolean, null
+    __intnl_SystemBoolean_35: %SystemBoolean, null
+    __lcl_durationTimespan_SystemTimeSpan_0: %SystemTimeSpan, null
+    __lcl_currentTimeTimespan_SystemTimeSpan_0: %SystemTimeSpan, null
+    __intnl_SystemDouble_1: %SystemDouble, null
+    __lcl_totalTimeStr_SystemString_0: %SystemString, null
+    __lcl_statusStr_SystemString_0: %SystemString, null
+    __intnl_SystemString_4: %SystemString, null
+    __intnl_SystemBoolean_36: %SystemBoolean, null
+    __intnl_SystemBoolean_37: %SystemBoolean, null
+    __intnl_SystemDouble_2: %SystemDouble, null
+    __intnl_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemDouble_3: %SystemDouble, null
+    __intnl_SystemString_5: %SystemString, null
+    __intnl_SystemString_6: %SystemString, null
+    __intnl_VRCSDKBaseVRCUrl_0: %VRCSDKBaseVRCUrl, null
+    __intnl_VRCSDK3ComponentsVRCUrlInputField_0: %VRCSDK3ComponentsVRCUrlInputField, null
+    __intnl_VRCSDKBaseVRCUrl_1: %VRCSDKBaseVRCUrl, null
+    __intnl_VRCUdonUdonBehaviour_8: %VRCUdonUdonBehaviour, null
+    __intnl_SystemBoolean_38: %SystemBoolean, null
+    __intnl_SystemObject_7: %SystemObject, null
+    __intnl_SystemBoolean_39: %SystemBoolean, null
+    __intnl_VRCSDKBaseVRCPlayerApi_1: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemBoolean_40: %SystemBoolean, null
+    __intnl_SystemObject_8: %SystemObject, null
+    __intnl_VRCUdonUdonBehaviour_9: %VRCUdonUdonBehaviour, null
+    __intnl_VRCUdonUdonBehaviour_10: %VRCUdonUdonBehaviour, null
+    __intnl_SystemBoolean_41: %SystemBoolean, null
+    __intnl_SystemObject_9: %SystemObject, null
+    __intnl_SystemBoolean_42: %SystemBoolean, null
+    __intnl_VRCUdonUdonBehaviour_11: %VRCUdonUdonBehaviour, null
+    __intnl_VRCUdonUdonBehaviour_12: %VRCUdonUdonBehaviour, null
+    __intnl_VRCUdonUdonBehaviour_13: %VRCUdonUdonBehaviour, null
+    __intnl_SystemBoolean_43: %SystemBoolean, null
+    __intnl_SystemObject_10: %SystemObject, null
+    __intnl_SystemBoolean_44: %SystemBoolean, null
+    __intnl_VRCUdonUdonBehaviour_14: %VRCUdonUdonBehaviour, null
+    __intnl_VRCUdonUdonBehaviour_15: %VRCUdonUdonBehaviour, null
+    __intnl_UnityEngineGameObject_3: %UnityEngineGameObject, null
+    __intnl_SystemBoolean_45: %SystemBoolean, null
+.data_end
+.code_start
+.update_order 10
+    .export _onEnable
+    _onEnable:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnEnable()
+# 
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_0
+        PUSH, __this_VRCUdonUdonBehaviour_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __gintnl_SystemUInt32_0
+# Calling UdonSharp.Video.VideoControlHandler.UpdateMaster()
+        JUMP, 0x0000020C
+        PUSH, __gintnl_SystemUInt32_1
+# Calling UdonSharp.Video.VideoControlHandler.UpdateVideoOwner()
+        JUMP, 0x00000228
+        PUSH, volumeController
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x000000c0
+        PUSH, volumeController
+        PUSH, __const_SystemString_2
+        PUSH, __this_VRCUdonUdonBehaviour_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, volumeController
+        PUSH, __const_SystemString_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onDisable
+    _onDisable:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnDisable()
+# 
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_4
+        PUSH, __this_VRCUdonUdonBehaviour_2
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_5
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onOwnershipRequest
+    _onOwnershipRequest:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnOwnershipRequest(VRC.SDKBase.VRCPlayerApi, VRC.SDKBase.VRCPlayerApi)
+# 
+        PUSH, __const_SystemBoolean_0
+        PUSH, __0__onOwnershipRequest__ret
+        COPY
+        PUSH, __0__onOwnershipRequest__ret
+        PUSH, __returnValue
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.Update()
+# 
+        PUSH, __gintnl_SystemUInt32_2
+# Calling UdonSharp.Video.VideoControlHandler.RunUIUpdate()
+        JUMP, 0x00000F60
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onPlayerLeft
+    _onPlayerLeft:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnPlayerLeft(VRC.SDKBase.VRCPlayerApi)
+# 
+        PUSH, __gintnl_SystemUInt32_3
+# Calling UdonSharp.Video.VideoControlHandler.UpdateMaster()
+        JUMP, 0x0000020C
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnVideoPlayerOwnerTransferred
+    OnVideoPlayerOwnerTransferred:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnVideoPlayerOwnerTransferred()
+# 
+        PUSH, __gintnl_SystemUInt32_4
+# Calling UdonSharp.Video.VideoControlHandler.UpdateVideoOwner()
+        JUMP, 0x00000228
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.UpdateMaster()
+# 
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.UpdateVideoOwner()
+# 
+        PUSH, __gintnl_SystemUInt32_5
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        COPY
+        PUSH, __const_SystemString_6
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_7
+        PUSH, __intnl_SystemObject_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_0
+        PUSH, __intnl_SystemBoolean_1
+        COPY
+        PUSH, __intnl_SystemBoolean_1
+        PUSH, __0_locked__param
+        COPY
+# Calling UdonSharp.Video.VideoControlHandler.SetLocked(bool)
+        JUMP, 0x000004E0
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_SetControlledVideoPlayer
+    __0_SetControlledVideoPlayer:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.SetControlledVideoPlayer(UdonSharp.Video.USharpVideoPlayer)
+# 
+        PUSH, __0_newPlayer__param
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_2
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x00000334
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_4
+        PUSH, __this_VRCUdonUdonBehaviour_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_5
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_newPlayer__param
+        PUSH, targetVideoPlayer
+        COPY
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_0
+        PUSH, __this_VRCUdonUdonBehaviour_4
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __gintnl_SystemUInt32_6
+# Calling UdonSharp.Video.VideoControlHandler.UpdateVideoOwner()
+        JUMP, 0x00000228
+        PUSH, __gintnl_SystemUInt32_7
+        PUSH, __const_SystemString_8
+        PUSH, __0_newStatus__param
+        COPY
+# Calling UdonSharp.Video.VideoControlHandler.SetStatusText(string)
+        JUMP, 0x0000041C
+        PUSH, __const_SystemBoolean_0
+        PUSH, _draggingSlider
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_SetStatusText
+    __0_SetStatusText:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.SetStatusText(string)
+# 
+        PUSH, __0_newStatus__param
+        PUSH, _currentStatusText
+        COPY
+        PUSH, statusTextField
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x00000470
+        PUSH, statusTextField
+        PUSH, _currentStatusText
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        PUSH, statusTextDropShadow
+        PUSH, __intnl_SystemBoolean_4
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_4
+        JUMP_IF_FALSE, 0x000004b0
+        PUSH, statusTextDropShadow
+        PUSH, _currentStatusText
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        PUSH, __const_SystemInt32_0
+        PUSH, _lastTime
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_SetLocked
+    __0_SetLocked:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.SetLocked(bool)
+# 
+        PUSH, __0_locked__param
+        JUMP_IF_FALSE, 0x000007b4
+        PUSH, masterLockedIcon
+        PUSH, __intnl_SystemBoolean_5
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_5
+        JUMP_IF_FALSE, 0x00000530
+        PUSH, masterLockedIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, masterUnlockedIcon
+        PUSH, __intnl_SystemBoolean_6
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_6
+        JUMP_IF_FALSE, 0x00000570
+        PUSH, masterUnlockedIcon
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_UnityEngineGameObject_0
+        EXTERN, "UnityEngineComponent.__get_gameObject__UnityEngineGameObject"
+        PUSH, __intnl_UnityEngineGameObject_0
+        PUSH, __intnl_SystemBoolean_7
+        EXTERN, "VRCSDKBaseNetworking.__IsOwner__UnityEngineGameObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_7
+        JUMP_IF_FALSE, 0x000005b8
+        JUMP, 0x0000062C
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_1
+        COPY
+        PUSH, __const_SystemString_9
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_10
+        PUSH, __intnl_SystemObject_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_1
+        PUSH, __intnl_SystemBoolean_8
+        COPY
+        PUSH, __intnl_SystemBoolean_8
+        PUSH, __intnl_SystemBoolean_7
+        COPY
+        PUSH, __intnl_SystemBoolean_7
+        JUMP_IF_FALSE, 0x000006c4
+        PUSH, lockGraphic
+        PUSH, __intnl_SystemBoolean_9
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_9
+        JUMP_IF_FALSE, 0x0000067c
+        PUSH, lockGraphic
+        PUSH, whiteGraphicColor
+        EXTERN, "UnityEngineUIGraphic.__set_color__UnityEngineColor__SystemVoid"
+        PUSH, urlFieldPlaceholderText
+        PUSH, __intnl_SystemBoolean_10
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_10
+        JUMP_IF_FALSE, 0x000006bc
+        PUSH, urlFieldPlaceholderText
+        PUSH, __const_SystemString_11
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        JUMP, 0x000007AC
+        PUSH, lockGraphic
+        PUSH, __intnl_SystemBoolean_9
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_9
+        JUMP_IF_FALSE, 0x00000704
+        PUSH, lockGraphic
+        PUSH, redGraphicColor
+        EXTERN, "UnityEngineUIGraphic.__set_color__UnityEngineColor__SystemVoid"
+        PUSH, urlFieldPlaceholderText
+        PUSH, __intnl_SystemBoolean_10
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_10
+        JUMP_IF_FALSE, 0x000007ac
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_UnityEngineGameObject_1
+        EXTERN, "UnityEngineComponent.__get_gameObject__UnityEngineGameObject"
+        PUSH, __intnl_UnityEngineGameObject_1
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        EXTERN, "VRCSDKBaseNetworking.__GetOwner__UnityEngineGameObject__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        PUSH, __intnl_SystemString_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString"
+        PUSH, __const_SystemString_12
+        PUSH, __intnl_SystemString_0
+        PUSH, __intnl_SystemString_1
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, urlFieldPlaceholderText
+        PUSH, __intnl_SystemString_1
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        JUMP, 0x000008B4
+        PUSH, masterLockedIcon
+        PUSH, __intnl_SystemBoolean_5
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_5
+        JUMP_IF_FALSE, 0x000007f4
+        PUSH, masterLockedIcon
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, masterUnlockedIcon
+        PUSH, __intnl_SystemBoolean_6
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_6
+        JUMP_IF_FALSE, 0x00000834
+        PUSH, masterUnlockedIcon
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, lockGraphic
+        PUSH, __intnl_SystemBoolean_7
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_7
+        JUMP_IF_FALSE, 0x00000874
+        PUSH, lockGraphic
+        PUSH, whiteGraphicColor
+        EXTERN, "UnityEngineUIGraphic.__set_color__UnityEngineColor__SystemVoid"
+        PUSH, urlFieldPlaceholderText
+        PUSH, __intnl_SystemBoolean_8
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_8
+        JUMP_IF_FALSE, 0x000008b4
+        PUSH, urlFieldPlaceholderText
+        PUSH, __const_SystemString_13
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_SetPaused
+    __0_SetPaused:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.SetPaused(bool)
+# 
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_2
+        COPY
+        PUSH, __const_SystemString_14
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_15
+        PUSH, __intnl_SystemObject_2
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_2
+        PUSH, __intnl_SystemBoolean_11
+        COPY
+        PUSH, __intnl_SystemBoolean_11
+        PUSH, __lcl_videoMode_SystemBoolean_0
+        COPY
+        PUSH, pauseIcon
+        PUSH, __intnl_SystemBoolean_12
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_12
+        JUMP_IF_FALSE, 0x00000984
+        PUSH, pauseIcon
+        PUSH, __lcl_videoMode_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, stopIcon
+        PUSH, __intnl_SystemBoolean_13
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_13
+        JUMP_IF_FALSE, 0x000009dc
+        PUSH, __lcl_videoMode_SystemBoolean_0
+        PUSH, __intnl_SystemBoolean_14
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, stopIcon
+        PUSH, __intnl_SystemBoolean_14
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, playObject
+        PUSH, __intnl_SystemBoolean_15
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_15
+        JUMP_IF_FALSE, 0x00000a1c
+        PUSH, playObject
+        PUSH, __0_paused__param
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, pauseStopObject
+        PUSH, __intnl_SystemBoolean_16
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_16
+        JUMP_IF_FALSE, 0x00000a74
+        PUSH, __0_paused__param
+        PUSH, __intnl_SystemBoolean_17
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, pauseStopObject
+        PUSH, __intnl_SystemBoolean_17
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_SetLooping
+    __0_SetLooping:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.SetLooping(bool)
+# 
+        PUSH, __0_looping__param
+        JUMP_IF_FALSE, 0x00000b28
+        PUSH, loopButtonBackground
+        PUSH, __intnl_SystemBoolean_18
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_18
+        JUMP_IF_FALSE, 0x00000ae0
+        PUSH, loopButtonBackground
+        PUSH, buttonActivatedColor
+        EXTERN, "UnityEngineUIGraphic.__set_color__UnityEngineColor__SystemVoid"
+        PUSH, loopButtonIcon
+        PUSH, __intnl_SystemBoolean_19
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_19
+        JUMP_IF_FALSE, 0x00000b20
+        PUSH, loopButtonIcon
+        PUSH, iconInvertedColor
+        EXTERN, "UnityEngineUIGraphic.__set_color__UnityEngineColor__SystemVoid"
+        JUMP, 0x00000BA8
+        PUSH, loopButtonBackground
+        PUSH, __intnl_SystemBoolean_18
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_18
+        JUMP_IF_FALSE, 0x00000b68
+        PUSH, loopButtonBackground
+        PUSH, buttonBackgroundColor
+        EXTERN, "UnityEngineUIGraphic.__set_color__UnityEngineColor__SystemVoid"
+        PUSH, loopButtonIcon
+        PUSH, __intnl_SystemBoolean_19
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_19
+        JUMP_IF_FALSE, 0x00000ba8
+        PUSH, loopButtonIcon
+        PUSH, whiteGraphicColor
+        EXTERN, "UnityEngineUIGraphic.__set_color__UnityEngineColor__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_SetVolume
+    __0_SetVolume:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.SetVolume(float)
+# 
+        PUSH, volumeController
+        PUSH, __intnl_SystemBoolean_20
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_20
+        JUMP_IF_FALSE, 0x00000c38
+# Cow dirty
+        PUSH, __0_volume__param
+        PUSH, __intnl_SystemSingle_0
+        COPY
+        PUSH, volumeController
+        PUSH, __const_SystemString_16
+        PUSH, __0_volume__param
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, volumeController
+        PUSH, __const_SystemString_17
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_SetMuted
+    __0_SetMuted:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.SetMuted(bool)
+# 
+        PUSH, volumeController
+        PUSH, __intnl_SystemBoolean_21
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_21
+        JUMP_IF_FALSE, 0x00000cc8
+# Cow dirty
+        PUSH, __0_muted__param
+        PUSH, __intnl_SystemBoolean_22
+        COPY
+        PUSH, volumeController
+        PUSH, __const_SystemString_18
+        PUSH, __0_muted__param
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, volumeController
+        PUSH, __const_SystemString_19
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_OnVolumeSliderChange
+    __0_OnVolumeSliderChange:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnVolumeSliderChange(float)
+# 
+# Cow dirty
+        PUSH, __1_volume__param
+        PUSH, __intnl_SystemSingle_1
+        COPY
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_16
+        PUSH, __1_volume__param
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_17
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_OnMutePress
+    __0_OnMutePress:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnMutePress(bool)
+# 
+# Cow dirty
+        PUSH, __1_muted__param
+        PUSH, __intnl_SystemBoolean_23
+        COPY
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_18
+        PUSH, __1_muted__param
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_19
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export __0_AddURLToHistory
+    __0_AddURLToHistory:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.AddURLToHistory(VRC.SDKBase.VRCUrl)
+# 
+        PUSH, currentURLField
+        PUSH, __intnl_SystemBoolean_24
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_24
+        JUMP_IF_FALSE, 0x00000e64
+        PUSH, previousURLField
+        PUSH, __intnl_SystemBoolean_25
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_25
+        JUMP_IF_FALSE, 0x00000e34
+        PUSH, currentURLField
+        PUSH, __intnl_SystemString_2
+        EXTERN, "UnityEngineUIInputField.__get_text__SystemString"
+        PUSH, previousURLField
+        PUSH, __intnl_SystemString_2
+        EXTERN, "UnityEngineUIInputField.__set_text__SystemString__SystemVoid"
+        PUSH, __0_url__param
+        PUSH, __intnl_SystemString_3
+        EXTERN, "VRCSDKBaseVRCUrl.__Get__SystemString"
+        PUSH, currentURLField
+        PUSH, __intnl_SystemString_3
+        EXTERN, "UnityEngineUIInputField.__set_text__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export SetToVideoPlayerMode
+    SetToVideoPlayerMode:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.SetToVideoPlayerMode()
+# 
+        PUSH, syncController
+        PUSH, __intnl_SystemBoolean_26
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_26
+        JUMP_IF_FALSE, 0x00000ed4
+        PUSH, syncController
+# Cow dirty
+        PUSH, syncController
+        PUSH, __intnl_VRCUdonUdonBehaviour_3
+        COPY
+        PUSH, __const_SystemString_20
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export SetToStreamPlayerMode
+    SetToStreamPlayerMode:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.SetToStreamPlayerMode()
+# 
+        PUSH, syncController
+        PUSH, __intnl_SystemBoolean_27
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_27
+        JUMP_IF_FALSE, 0x00000f44
+        PUSH, syncController
+# Cow dirty
+        PUSH, syncController
+        PUSH, __intnl_VRCUdonUdonBehaviour_4
+        COPY
+        PUSH, __const_SystemString_21
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.RunUIUpdate()
+# 
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_5
+        COPY
+        PUSH, __const_SystemString_14
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_15
+        PUSH, __intnl_SystemObject_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_3
+        PUSH, __intnl_SystemBoolean_28
+        COPY
+        PUSH, __intnl_SystemBoolean_28
+        JUMP_IF_FALSE, 0x00001628
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_6
+        COPY
+        PUSH, __const_SystemString_22
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_23
+        PUSH, __intnl_SystemObject_4
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_4
+        PUSH, __intnl_VRCUdonUdonBehaviour_7
+        COPY
+        PUSH, __intnl_VRCUdonUdonBehaviour_7
+        PUSH, __lcl_manager_VRCUdonUdonBehaviour_0
+        COPY
+        PUSH, __lcl_manager_VRCUdonUdonBehaviour_0
+        PUSH, __const_SystemString_24
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __lcl_manager_VRCUdonUdonBehaviour_0
+        PUSH, __const_SystemString_25
+        PUSH, __intnl_SystemObject_5
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_5
+        PUSH, __intnl_SystemSingle_2
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, __intnl_SystemSingle_2
+        PUSH, __lcl_duration_SystemSingle_0
+        COPY
+        PUSH, _draggingSlider
+        JUMP_IF_FALSE, 0x00001218
+        PUSH, progressSlider
+        PUSH, __lcl_currentProgress_SystemSingle_0
+        EXTERN, "UnityEngineUISlider.__get_value__SystemSingle"
+        PUSH, __lcl_duration_SystemSingle_0
+        PUSH, __lcl_currentProgress_SystemSingle_0
+        PUSH, __lcl_currentTime_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_26
+        PUSH, __lcl_currentProgress_SystemSingle_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_27
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __gintnl_SystemUInt32_8
+        PUSH, __lcl_currentTime_SystemSingle_0
+        PUSH, __intnl_SystemDouble_0
+        EXTERN, "SystemConvert.__ToDouble__SystemSingle__SystemDouble"
+        PUSH, __intnl_SystemDouble_0
+        PUSH, __intnl_SystemTimeSpan_0
+        EXTERN, "SystemTimeSpan.__FromSeconds__SystemDouble__SystemTimeSpan"
+        PUSH, __intnl_SystemTimeSpan_0
+        PUSH, __0_time__param
+        COPY
+# Calling UdonSharp.Video.VideoControlHandler.GetFormattedTime(System.TimeSpan)
+        JUMP, 0x0000169C
+        PUSH, __0___0_GetFormattedTime__ret
+        PUSH, __lcl_currentTimeStr_SystemString_0
+        COPY
+        PUSH, statusTextField
+        PUSH, __intnl_SystemBoolean_29
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_29
+        JUMP_IF_FALSE, 0x000011d0
+        PUSH, statusTextField
+        PUSH, __lcl_currentTimeStr_SystemString_0
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        PUSH, statusTextDropShadow
+        PUSH, __intnl_SystemBoolean_30
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_30
+        JUMP_IF_FALSE, 0x00001210
+        PUSH, statusTextDropShadow
+        PUSH, __lcl_currentTimeStr_SystemString_0
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        JUMP, 0x00001620
+        PUSH, __lcl_manager_VRCUdonUdonBehaviour_0
+        PUSH, __const_SystemString_28
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __lcl_manager_VRCUdonUdonBehaviour_0
+        PUSH, __const_SystemString_29
+        PUSH, __intnl_SystemObject_6
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_6
+        PUSH, __intnl_SystemSingle_3
+        EXTERN, "SystemConvert.__ToSingle__SystemObject__SystemSingle"
+        PUSH, __intnl_SystemSingle_3
+        PUSH, __lcl_currentTime_SystemSingle_0
+        COPY
+        PUSH, progressSlider
+        PUSH, __intnl_SystemBoolean_29
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_29
+        JUMP_IF_FALSE, 0x0000138c
+        PUSH, __lcl_duration_SystemSingle_0
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemBoolean_30
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_30
+        JUMP_IF_FALSE, 0x0000135c
+        PUSH, progressSlider
+        PUSH, __intnl_UnityEngineGameObject_2
+        EXTERN, "UnityEngineComponent.__get_gameObject__UnityEngineGameObject"
+        PUSH, __intnl_UnityEngineGameObject_2
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __lcl_currentTime_SystemSingle_0
+        PUSH, __lcl_duration_SystemSingle_0
+        PUSH, __intnl_SystemSingle_4
+        EXTERN, "SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __intnl_SystemSingle_4
+        PUSH, __intnl_SystemSingle_5
+        EXTERN, "UnityEngineMathf.__Clamp01__SystemSingle__SystemSingle"
+        PUSH, progressSlider
+        PUSH, __intnl_SystemSingle_5
+        EXTERN, "UnityEngineUISlider.__set_value__SystemSingle__SystemVoid"
+        JUMP, 0x0000138C
+        PUSH, progressSlider
+        PUSH, __intnl_UnityEngineGameObject_2
+        EXTERN, "UnityEngineComponent.__get_gameObject__UnityEngineGameObject"
+        PUSH, __intnl_UnityEngineGameObject_2
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __lcl_currentTime_SystemSingle_0
+        PUSH, __lcl_currentTimeInt_SystemInt32_0
+        EXTERN, "UnityEngineMathf.__RoundToInt__SystemSingle__SystemInt32"
+        PUSH, __lcl_currentTimeInt_SystemInt32_0
+        PUSH, _lastTime
+        PUSH, __intnl_SystemBoolean_30
+        EXTERN, "SystemInt32.__op_Inequality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_30
+        JUMP_IF_FALSE, 0x00001620
+        PUSH, __lcl_currentTimeInt_SystemInt32_0
+        PUSH, _lastTime
+        COPY
+        PUSH, __lcl_duration_SystemSingle_0
+        PUSH, __intnl_SystemBoolean_31
+        EXTERN, "SystemSingle.__IsInfinity__SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_31
+        PUSH, __intnl_SystemBoolean_32
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __lcl_duration_SystemSingle_0
+        PUSH, __const_SystemSingle_1
+        PUSH, __intnl_SystemBoolean_33
+        EXTERN, "SystemSingle.__op_Inequality__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_32
+        PUSH, __intnl_SystemBoolean_33
+        PUSH, __intnl_SystemBoolean_34
+        EXTERN, "SystemBoolean.__op_LogicalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_34
+        JUMP_IF_FALSE, 0x00001620
+        PUSH, _currentStatusText
+        PUSH, __intnl_SystemBoolean_35
+        EXTERN, "SystemString.__IsNullOrEmpty__SystemString__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_35
+        JUMP_IF_FALSE, 0x00001620
+        PUSH, __lcl_duration_SystemSingle_0
+        PUSH, __intnl_SystemDouble_0
+        EXTERN, "SystemConvert.__ToDouble__SystemSingle__SystemDouble"
+        PUSH, __intnl_SystemDouble_0
+        PUSH, __lcl_durationTimespan_SystemTimeSpan_0
+        EXTERN, "SystemTimeSpan.__FromSeconds__SystemDouble__SystemTimeSpan"
+        PUSH, __lcl_currentTime_SystemSingle_0
+        PUSH, __intnl_SystemDouble_1
+        EXTERN, "SystemConvert.__ToDouble__SystemSingle__SystemDouble"
+        PUSH, __intnl_SystemDouble_1
+        PUSH, __lcl_currentTimeTimespan_SystemTimeSpan_0
+        EXTERN, "SystemTimeSpan.__FromSeconds__SystemDouble__SystemTimeSpan"
+        PUSH, __gintnl_SystemUInt32_9
+        PUSH, __lcl_durationTimespan_SystemTimeSpan_0
+        PUSH, __0_time__param
+        COPY
+# Calling UdonSharp.Video.VideoControlHandler.GetFormattedTime(System.TimeSpan)
+        JUMP, 0x0000169C
+        PUSH, __0___0_GetFormattedTime__ret
+        PUSH, __lcl_totalTimeStr_SystemString_0
+        COPY
+        PUSH, __gintnl_SystemUInt32_10
+        PUSH, __lcl_currentTimeTimespan_SystemTimeSpan_0
+        PUSH, __0_time__param
+        COPY
+# Calling UdonSharp.Video.VideoControlHandler.GetFormattedTime(System.TimeSpan)
+        JUMP, 0x0000169C
+        PUSH, __0___0_GetFormattedTime__ret
+        PUSH, __lcl_currentTimeStr_SystemString_0
+        COPY
+        PUSH, __lcl_currentTimeStr_SystemString_0
+        PUSH, __const_SystemString_30
+        PUSH, __intnl_SystemString_4
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __intnl_SystemString_4
+        PUSH, __lcl_totalTimeStr_SystemString_0
+        PUSH, __lcl_statusStr_SystemString_0
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, statusTextField
+        PUSH, __intnl_SystemBoolean_36
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_36
+        JUMP_IF_FALSE, 0x000015e0
+        PUSH, statusTextField
+        PUSH, __lcl_statusStr_SystemString_0
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        PUSH, statusTextDropShadow
+        PUSH, __intnl_SystemBoolean_37
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_37
+        JUMP_IF_FALSE, 0x00001620
+        PUSH, statusTextDropShadow
+        PUSH, __lcl_statusStr_SystemString_0
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        JUMP, 0x00001680
+        PUSH, progressSlider
+        PUSH, __intnl_SystemBoolean_29
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_29
+        JUMP_IF_FALSE, 0x00001680
+        PUSH, progressSlider
+        PUSH, __intnl_UnityEngineGameObject_2
+        EXTERN, "UnityEngineComponent.__get_gameObject__UnityEngineGameObject"
+        PUSH, __intnl_UnityEngineGameObject_2
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.GetFormattedTime(System.TimeSpan)
+# 
+        PUSH, __0_time__param
+        PUSH, __intnl_SystemDouble_2
+        EXTERN, "SystemTimeSpan.__get_TotalHours__SystemDouble"
+        PUSH, __intnl_SystemDouble_2
+        PUSH, __intnl_SystemDouble_3
+        EXTERN, "SystemMath.__Truncate__SystemDouble__SystemDouble"
+        PUSH, __intnl_SystemDouble_3
+        PUSH, __intnl_SystemInt32_0
+        EXTERN, "SystemConvert.__ToInt32__SystemDouble__SystemInt32"
+        PUSH, __intnl_SystemInt32_0
+        PUSH, __const_SystemString_31
+        PUSH, __intnl_SystemString_5
+        EXTERN, "SystemInt32.__ToString__SystemString__SystemString"
+        PUSH, __0_time__param
+        PUSH, __const_SystemString_32
+        PUSH, __intnl_SystemString_6
+        EXTERN, "SystemTimeSpan.__ToString__SystemString__SystemString"
+        PUSH, __intnl_SystemString_5
+        PUSH, __intnl_SystemString_6
+        PUSH, __0___0_GetFormattedTime__ret
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnURLInput
+    OnURLInput:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnURLInput()
+# 
+        PUSH, urlField
+        PUSH, __intnl_VRCSDKBaseVRCUrl_0
+        EXTERN, "VRCSDK3ComponentsVRCUrlInputField.__GetUrl__VRCSDKBaseVRCUrl"
+# Cow dirty
+        PUSH, urlField
+        PUSH, __intnl_VRCSDK3ComponentsVRCUrlInputField_0
+        COPY
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_33
+        PUSH, __intnl_VRCSDKBaseVRCUrl_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_34
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_VRCSDKBaseVRCUrl_1
+        EXTERN, "VRCSDKBaseVRCUrl.__get_Empty__VRCSDKBaseVRCUrl"
+        PUSH, urlField
+        PUSH, __intnl_VRCSDKBaseVRCUrl_1
+        EXTERN, "VRCSDK3ComponentsVRCUrlInputField.__SetUrl__VRCSDKBaseVRCUrl__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnPlayButtonPress
+    OnPlayButtonPress:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnPlayButtonPress()
+# 
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_8
+        COPY
+        PUSH, __const_SystemString_35
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_36
+        PUSH, __intnl_SystemObject_7
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_7
+        PUSH, __intnl_SystemBoolean_38
+        COPY
+        PUSH, __intnl_SystemBoolean_38
+        PUSH, __intnl_SystemBoolean_39
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_VRCUdonUdonBehaviour_8
+        PUSH, __const_SystemString_37
+        PUSH, __intnl_SystemBoolean_39
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, __intnl_VRCUdonUdonBehaviour_8
+        PUSH, __const_SystemString_38
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnLockButtonPress
+    OnLockButtonPress:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnLockButtonPress()
+# 
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_39
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_40
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_41
+        PUSH, __intnl_SystemObject_8
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_8
+        PUSH, __intnl_SystemBoolean_40
+        COPY
+        PUSH, __intnl_SystemBoolean_40
+        JUMP_IF_FALSE, 0x00001a50
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_9
+        COPY
+        PUSH, __const_SystemString_42
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_10
+        COPY
+        PUSH, __const_SystemString_6
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_7
+        PUSH, __intnl_SystemObject_9
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_9
+        PUSH, __intnl_SystemBoolean_41
+        COPY
+        PUSH, __intnl_SystemBoolean_41
+        PUSH, __intnl_SystemBoolean_42
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_VRCUdonUdonBehaviour_10
+        PUSH, __const_SystemString_43
+        PUSH, __intnl_SystemBoolean_42
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, __intnl_VRCUdonUdonBehaviour_10
+        PUSH, __const_SystemString_44
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnReloadButtonPressed
+    OnReloadButtonPressed:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnReloadButtonPressed()
+# 
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_11
+        COPY
+        PUSH, __const_SystemString_45
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnLoopButtonPressed
+    OnLoopButtonPressed:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnLoopButtonPressed()
+# 
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_12
+        COPY
+        PUSH, __const_SystemString_42
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_13
+        COPY
+        PUSH, __const_SystemString_46
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_47
+        PUSH, __intnl_SystemObject_10
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_10
+        PUSH, __intnl_SystemBoolean_43
+        COPY
+        PUSH, __intnl_SystemBoolean_43
+        PUSH, __intnl_SystemBoolean_44
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __intnl_VRCUdonUdonBehaviour_13
+        PUSH, __const_SystemString_48
+        PUSH, __intnl_SystemBoolean_44
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, __intnl_VRCUdonUdonBehaviour_13
+        PUSH, __const_SystemString_49
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnVideoPlayerModeButtonPressed
+    OnVideoPlayerModeButtonPressed:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnVideoPlayerModeButtonPressed()
+# 
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_14
+        COPY
+        PUSH, __const_SystemString_50
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnStreamPlayerModeButtonPressed
+    OnStreamPlayerModeButtonPressed:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnStreamPlayerModeButtonPressed()
+# 
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_15
+        COPY
+        PUSH, __const_SystemString_51
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnSeekSliderChanged
+    OnSeekSliderChanged:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnSeekSliderChanged()
+# 
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnSeekSliderBeginDrag
+    OnSeekSliderBeginDrag:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnSeekSliderBeginDrag()
+# 
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_UnityEngineGameObject_3
+        EXTERN, "UnityEngineComponent.__get_gameObject__UnityEngineGameObject"
+        PUSH, __intnl_UnityEngineGameObject_3
+        PUSH, __intnl_SystemBoolean_45
+        EXTERN, "VRCSDKBaseNetworking.__IsOwner__UnityEngineGameObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_45
+        JUMP_IF_FALSE, 0x00001cac
+        PUSH, __const_SystemBoolean_1
+        PUSH, _draggingSlider
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnSeekSliderEndDrag
+    OnSeekSliderEndDrag:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.VideoControlHandler.OnSeekSliderEndDrag()
+# 
+        PUSH, __const_SystemBoolean_0
+        PUSH, _draggingSlider
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

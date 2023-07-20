@@ -1,0 +1,129 @@
+.data_start
+    .export targetVideoPlayer
+    .export url
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    targetVideoPlayer: %VRCUdonUdonBehaviour, null
+    url: %VRCSDKBaseVRCUrl, null
+    button: %UnityEngineUIButton, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __this_UnityEngineTransform_0: %UnityEngineTransform, this
+    __const_SystemType_0: %SystemType, null
+    __gintnl_SystemUInt32_0: %SystemUInt32, null
+    __this_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, this
+    __const_SystemString_0: %SystemString, null
+    __const_SystemString_1: %SystemString, null
+    __const_SystemString_2: %SystemString, null
+    __const_SystemString_3: %SystemString, null
+    __gintnl_SystemUInt32_1: %SystemUInt32, null
+    __gintnl_SystemUInt32_2: %SystemUInt32, null
+    __const_SystemString_4: %SystemString, null
+    __const_SystemString_5: %SystemString, null
+    __intnl_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, null
+    __intnl_VRCSDKBaseVRCUrl_0: %VRCSDKBaseVRCUrl, null
+    __intnl_VRCUdonUdonBehaviour_1: %VRCUdonUdonBehaviour, null
+    __intnl_UnityEngineUIButton_0: %UnityEngineUIButton, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_SystemObject_0: %SystemObject, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.Examples.PlayURLButton.Start()
+# 
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __const_SystemType_0
+        PUSH, button
+        EXTERN, "UnityEngineComponent.__GetComponentInChildren__T"
+        PUSH, __gintnl_SystemUInt32_0
+# Calling UdonSharp.Video.Examples.PlayURLButton.UpdateOwnership()
+        JUMP, 0x00000160
+        PUSH, __this_VRCUdonUdonBehaviour_0
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        COPY
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_0
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnButtonPress
+    OnButtonPress:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.Examples.PlayURLButton.OnButtonPress()
+# 
+# Cow dirty
+        PUSH, url
+        PUSH, __intnl_VRCSDKBaseVRCUrl_0
+        COPY
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_2
+        PUSH, url
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnUSharpVideoLockChange
+    OnUSharpVideoLockChange:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.Examples.PlayURLButton.OnUSharpVideoLockChange()
+# 
+        PUSH, __gintnl_SystemUInt32_1
+# Calling UdonSharp.Video.Examples.PlayURLButton.UpdateOwnership()
+        JUMP, 0x00000160
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnUSharpVideoOwnershipChange
+    OnUSharpVideoOwnershipChange:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.Examples.PlayURLButton.OnUSharpVideoOwnershipChange()
+# 
+        PUSH, __gintnl_SystemUInt32_2
+# Calling UdonSharp.Video.Examples.PlayURLButton.UpdateOwnership()
+        JUMP, 0x00000160
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.Examples.PlayURLButton.UpdateOwnership()
+# 
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_1
+        COPY
+# Cow dirty
+        PUSH, button
+        PUSH, __intnl_UnityEngineUIButton_0
+        COPY
+        PUSH, __const_SystemString_4
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, targetVideoPlayer
+        PUSH, __const_SystemString_5
+        PUSH, __intnl_SystemObject_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __intnl_SystemObject_0
+        PUSH, __intnl_SystemBoolean_0
+        COPY
+        PUSH, __intnl_UnityEngineUIButton_0
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "UnityEngineUISelectable.__set_interactable__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

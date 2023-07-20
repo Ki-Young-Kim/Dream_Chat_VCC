@@ -1,0 +1,151 @@
+.data_start
+    .export capID
+    .sync capID, none
+    .export head_cube
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    capID: %SystemInt32, null
+    head_cube: %UnityEngineTransform, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemInt32_0: %SystemInt32, null
+    __const_UnityEngineHumanBodyBones_0: %UnityEngineHumanBodyBones, null
+    __this_UnityEngineGameObject_0: %UnityEngineGameObject, this
+    __this_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, this
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_VRCSDKBaseVRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_VRCSDKBaseVRCPlayerApi_1: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_UnityEngineVector3_0: %UnityEngineVector3, null
+    __intnl_VRCSDKBaseVRCPlayerApi_2: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_UnityEngineQuaternion_0: %UnityEngineQuaternion, null
+    __lcl_cap_player_VRCSDKBaseVRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemBoolean_2: %SystemBoolean, null
+    __intnl_VRCSDKBaseVRCPlayerApi_3: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_VRCSDKBaseVRCPlayerApi_4: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_SystemBoolean_3: %SystemBoolean, null
+    __intnl_VRCSDKBaseVRCPlayerApi_5: %VRCSDKBaseVRCPlayerApi, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# Follow_Cap.Start()
+# 
+        PUSH, __const_SystemInt32_0
+        PUSH, capID
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# Follow_Cap.Update()
+# 
+        PUSH, capID
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemInt32.__op_Inequality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x000001e0
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        PUSH, __intnl_SystemInt32_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32"
+        PUSH, __intnl_SystemInt32_0
+        PUSH, capID
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x00000158
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        PUSH, __const_UnityEngineHumanBodyBones_0
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3"
+        PUSH, head_cube
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_2
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_2
+        PUSH, __const_UnityEngineHumanBodyBones_0
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetBoneRotation__UnityEngineHumanBodyBones__UnityEngineQuaternion"
+        PUSH, head_cube
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "UnityEngineTransform.__set_rotation__UnityEngineQuaternion__SystemVoid"
+        JUMP, 0x000001E0
+        PUSH, capID
+        PUSH, __lcl_cap_player_VRCSDKBaseVRCPlayerApi_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetPlayerById__SystemInt32__VRCSDKBaseVRCPlayerApi"
+        PUSH, __lcl_cap_player_VRCSDKBaseVRCPlayerApi_0
+        PUSH, __const_UnityEngineHumanBodyBones_0
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3"
+        PUSH, head_cube
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid"
+        PUSH, __lcl_cap_player_VRCSDKBaseVRCPlayerApi_0
+        PUSH, __const_UnityEngineHumanBodyBones_0
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetBoneRotation__UnityEngineHumanBodyBones__UnityEngineQuaternion"
+        PUSH, head_cube
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "UnityEngineTransform.__set_rotation__UnityEngineQuaternion__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _interact
+    _interact:
+        PUSH, __const_SystemUInt32_0
+# 
+# Follow_Cap.Interact()
+# 
+        PUSH, __this_UnityEngineGameObject_0
+        PUSH, __intnl_SystemBoolean_2
+        EXTERN, "VRCSDKBaseNetworking.__IsOwner__UnityEngineGameObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x0000022c
+        JUMP, 0x00000254
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_3
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_3
+        PUSH, __this_UnityEngineGameObject_0
+        EXTERN, "VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_4
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_4
+        PUSH, capID
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32"
+        PUSH, __this_VRCUdonUdonBehaviour_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onDeserialization
+    _onDeserialization:
+        PUSH, __const_SystemUInt32_0
+# 
+# Follow_Cap.OnDeserialization()
+# 
+        PUSH, __this_UnityEngineGameObject_0
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "VRCSDKBaseNetworking.__IsOwner__UnityEngineGameObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x000002f8
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_5
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_5
+        PUSH, capID
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

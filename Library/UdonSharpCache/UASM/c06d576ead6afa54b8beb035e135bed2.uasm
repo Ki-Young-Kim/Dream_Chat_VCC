@@ -1,0 +1,186 @@
+.data_start
+    .export is_click
+    .export picture_ui
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    is_click: %SystemBoolean, null
+    picture_ui: %UnityEngineGameObject, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemBoolean_0: %SystemBoolean, null
+    __const_UnityEngineKeyCode_0: %UnityEngineKeyCode, null
+    __const_UnityEngineHumanBodyBones_0: %UnityEngineHumanBodyBones, null
+    __const_SystemBoolean_1: %SystemBoolean, null
+    __this_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, this
+    __const_VRCUdonCommonInterfacesNetworkEventTarget_0: %VRCUdonCommonInterfacesNetworkEventTarget, null
+    __const_SystemString_0: %SystemString, null
+    __const_UnityEngineKeyCode_1: %UnityEngineKeyCode, null
+    __const_UnityEngineKeyCode_2: %UnityEngineKeyCode, null
+    __this_VRCUdonUdonBehaviour_1: %VRCUdonUdonBehaviour, this
+    __this_VRCUdonUdonBehaviour_2: %VRCUdonUdonBehaviour, this
+    __const_SystemString_1: %SystemString, null
+    __this_VRCUdonUdonBehaviour_3: %VRCUdonUdonBehaviour, this
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_SystemBoolean_2: %SystemBoolean, null
+    __intnl_SystemBoolean_3: %SystemBoolean, null
+    __intnl_UnityEngineTransform_0: %UnityEngineTransform, null
+    __intnl_VRCSDKBaseVRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_UnityEngineVector3_0: %UnityEngineVector3, null
+    __intnl_UnityEngineTransform_1: %UnityEngineTransform, null
+    __intnl_VRCSDKBaseVRCPlayerApi_1: %VRCSDKBaseVRCPlayerApi, null
+    __intnl_UnityEngineQuaternion_0: %UnityEngineQuaternion, null
+.data_end
+.code_start
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# Get_key.Update()
+# 
+        PUSH, picture_ui
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__get_activeSelf__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        PUSH, __const_SystemBoolean_0
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "SystemBoolean.__op_Equality__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x000002c0
+        PUSH, __const_UnityEngineKeyCode_0
+        PUSH, __intnl_SystemBoolean_2
+        EXTERN, "UnityEngineInput.__GetKeyDown__UnityEngineKeyCode__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x0000016c
+        PUSH, picture_ui
+        PUSH, __intnl_UnityEngineTransform_0
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        PUSH, __const_UnityEngineHumanBodyBones_0
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__set_localPosition__UnityEngineVector3__SystemVoid"
+        PUSH, picture_ui
+        PUSH, __intnl_UnityEngineTransform_1
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        PUSH, __const_UnityEngineHumanBodyBones_0
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetBoneRotation__UnityEngineHumanBodyBones__UnityEngineQuaternion"
+        PUSH, __intnl_UnityEngineTransform_1
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "UnityEngineTransform.__set_localRotation__UnityEngineQuaternion__SystemVoid"
+        PUSH, __const_SystemBoolean_1
+        PUSH, is_click
+        COPY
+        PUSH, __this_VRCUdonUdonBehaviour_0
+        PUSH, __const_VRCUdonCommonInterfacesNetworkEventTarget_0
+        PUSH, __const_SystemString_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __const_UnityEngineKeyCode_1
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "UnityEngineInput.__GetKeyDown__UnityEngineKeyCode__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x0000019c
+        JUMP, 0x000001B4
+        PUSH, __const_UnityEngineKeyCode_2
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "UnityEngineInput.__GetKeyDown__UnityEngineKeyCode__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x000002b8
+        PUSH, picture_ui
+        PUSH, __intnl_UnityEngineTransform_0
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_0
+        PUSH, __const_UnityEngineHumanBodyBones_0
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__set_localPosition__UnityEngineVector3__SystemVoid"
+        PUSH, picture_ui
+        PUSH, __intnl_UnityEngineTransform_1
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __intnl_VRCSDKBaseVRCPlayerApi_1
+        PUSH, __const_UnityEngineHumanBodyBones_0
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetBoneRotation__UnityEngineHumanBodyBones__UnityEngineQuaternion"
+        PUSH, __intnl_UnityEngineTransform_1
+        PUSH, __intnl_UnityEngineQuaternion_0
+        EXTERN, "UnityEngineTransform.__set_localRotation__UnityEngineQuaternion__SystemVoid"
+        PUSH, __const_SystemBoolean_1
+        PUSH, is_click
+        COPY
+        PUSH, __this_VRCUdonUdonBehaviour_1
+        PUSH, __const_VRCUdonCommonInterfacesNetworkEventTarget_0
+        PUSH, __const_SystemString_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        JUMP, 0x000003A8
+        PUSH, __const_UnityEngineKeyCode_0
+        PUSH, __intnl_SystemBoolean_2
+        EXTERN, "UnityEngineInput.__GetKeyDown__UnityEngineKeyCode__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x0000031c
+        PUSH, __const_SystemBoolean_1
+        PUSH, is_click
+        COPY
+        PUSH, __this_VRCUdonUdonBehaviour_2
+        PUSH, __const_VRCUdonCommonInterfacesNetworkEventTarget_0
+        PUSH, __const_SystemString_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __const_UnityEngineKeyCode_1
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "UnityEngineInput.__GetKeyDown__UnityEngineKeyCode__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x0000034c
+        JUMP, 0x00000364
+        PUSH, __const_UnityEngineKeyCode_2
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "UnityEngineInput.__GetKeyDown__UnityEngineKeyCode__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x000003a8
+        PUSH, __const_SystemBoolean_1
+        PUSH, is_click
+        COPY
+        PUSH, __this_VRCUdonUdonBehaviour_3
+        PUSH, __const_VRCUdonCommonInterfacesNetworkEventTarget_0
+        PUSH, __const_SystemString_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export network_UI_On
+    network_UI_On:
+        PUSH, __const_SystemUInt32_0
+# 
+# Get_key.network_UI_On()
+# 
+        PUSH, picture_ui
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export network_UI_Off
+    network_UI_Off:
+        PUSH, __const_SystemUInt32_0
+# 
+# Get_key.network_UI_Off()
+# 
+        PUSH, picture_ui
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

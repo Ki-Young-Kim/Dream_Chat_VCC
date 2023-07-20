@@ -1,0 +1,475 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp.dll:
+    - UdonSharp.Video.UI.UIStyle
+    - UdonSharp.Video.UI.UIStyleMarkup
+    - UdonSharp.Video.UI.UIStyler
+    BakeryRuntimeAssembly.dll:
+    - BakeryProjectSettings
+    - ftGlobalStorage
+    - ftLightmapsStorage
+    - ftLocalStorage
+    UdonSharp.Editor.dll:
+    - UdonSharp.UdonSharpProgramAsset
+    - UdonSharpEditor.UdonSharpAssemblyDefinition
+    Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.InputActionAsset
+    - UnityEngine.InputSystem.InputSettings
+    - UnityEngine.InputSystem.InputSystemObject
+    - UnityEngine.InputSystem.RemoteInputPlayerConnection
+    Unity.Postprocessing.Runtime.dll:
+    - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
+    - UnityEngine.Rendering.PostProcessing.AutoExposure
+    - UnityEngine.Rendering.PostProcessing.Bloom
+    - UnityEngine.Rendering.PostProcessing.ChromaticAberration
+    - UnityEngine.Rendering.PostProcessing.ColorGrading
+    - UnityEngine.Rendering.PostProcessing.DepthOfField
+    - UnityEngine.Rendering.PostProcessing.Grain
+    - UnityEngine.Rendering.PostProcessing.LensDistortion
+    - UnityEngine.Rendering.PostProcessing.MotionBlur
+    - UnityEngine.Rendering.PostProcessing.PostProcessLayer
+    - UnityEngine.Rendering.PostProcessing.PostProcessProfile
+    - UnityEngine.Rendering.PostProcessing.PostProcessResources
+    - UnityEngine.Rendering.PostProcessing.PostProcessVolume
+    - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
+    - UnityEngine.Rendering.PostProcessing.Vignette
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventTrigger
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
+    VRC.ClientSim.Editor.dll:
+    - VRC.SDK3.ClientSim.ClientSimInputAxesSettings
+    VRC.ClientSim.dll:
+    - VRC.SDK3.ClientSim.ClientSimDesktopTrackingProvider
+    - VRC.SDK3.ClientSim.ClientSimHighlightProxy
+    - VRC.SDK3.ClientSim.ClientSimPlayer
+    - VRC.SDK3.ClientSim.ClientSimPlayerAvatarManager
+    - VRC.SDK3.ClientSim.ClientSimPlayerController
+    - VRC.SDK3.ClientSim.ClientSimPlayerHand
+    - VRC.SDK3.ClientSim.ClientSimPlayerRaycaster
+    - VRC.SDK3.ClientSim.ClientSimPlayerStationManager
+    - VRC.SDK3.ClientSim.ClientSimProxyObjects
+    - VRC.SDK3.ClientSim.ClientSimReticle
+    - VRC.SDK3.ClientSim.ClientSimStackedCamera
+    - VRC.SDK3.ClientSim.ClientSimTooltip
+    VRC.SDKBase.Editor.dll:
+    - VRCSdkControlPanel
+    VRC.Udon.Editor.dll:
+    - VRC.Udon.Editor.ProgramSources.UdonGraphProgram.UI.GraphView.UdonGraphWindow
+    - VRC.Udon.Editor.ProgramSources.UdonGraphProgram.UdonGraphProgramAsset
+    VRC.Udon.dll:
+    - VRC.Udon.ProgramSources.SerializedUdonProgramAsset
+    - VRC.Udon.UdonBehaviour
+    VRCCore-Editor.dll:
+    - BestHTTP.HTTPUpdateDelegator
+    - VRC.Core.PipelineManager
+    - VRC.Core.Pool.PoolManager
+    - VRC.Core.UpdateDelegator
+    - VRCProjectSettings
+    VRCSDK3.dll:
+    - VRC.SDK3.Components.VRCAvatarPedestal
+    - VRC.SDK3.Components.VRCObjectSync
+    - VRC.SDK3.Components.VRCPickup
+    - VRC.SDK3.Components.VRCSceneDescriptor
+    - VRC.SDK3.Components.VRCSpatialAudioSource
+    - VRC.SDK3.Components.VRCStation
+    - VRC.SDK3.Components.VRCUiShape
+    - VRC.SDK3.Components.VRCUrlInputField
+    - VRC.SDK3.Video.Components.AVPro.VRCAVProVideoPlayer
+    - VRC.SDK3.Video.Components.AVPro.VRCAVProVideoScreen
+    - VRC.SDK3.Video.Components.AVPro.VRCAVProVideoSpeaker
+    - VRC.SDK3.Video.Components.VRCUnityVideoPlayer
+    VRCSDKBase.dll:
+    - VRC.SDKBase.Validation.Performance.Stats.AvatarPerformanceStatsLevel
+    - VRC.SDKBase.Validation.Performance.Stats.AvatarPerformanceStatsLevelSet
+  sceneClasses:
+    Assets/Scenes/MainHall.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 72
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 102
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11704}
+    - Class: 114
+      Script: {instanceID: 11706}
+    - Class: 114
+      Script: {instanceID: 11710}
+    - Class: 114
+      Script: {instanceID: 11714}
+    - Class: 114
+      Script: {instanceID: 11716}
+    - Class: 114
+      Script: {instanceID: 11718}
+    - Class: 114
+      Script: {instanceID: 11720}
+    - Class: 114
+      Script: {instanceID: 11726}
+    - Class: 114
+      Script: {instanceID: 11740}
+    - Class: 114
+      Script: {instanceID: 11778}
+    - Class: 114
+      Script: {instanceID: 12140}
+    - Class: 114
+      Script: {instanceID: 12522}
+    - Class: 114
+      Script: {instanceID: 12628}
+    - Class: 114
+      Script: {instanceID: 12666}
+    - Class: 114
+      Script: {instanceID: 12804}
+    - Class: 114
+      Script: {instanceID: 13452}
+    - Class: 114
+      Script: {instanceID: 13456}
+    - Class: 114
+      Script: {instanceID: 13590}
+    - Class: 114
+      Script: {instanceID: 13592}
+    - Class: 114
+      Script: {instanceID: 13594}
+    - Class: 114
+      Script: {instanceID: 13612}
+    - Class: 114
+      Script: {instanceID: 13614}
+    - Class: 114
+      Script: {instanceID: 13616}
+    - Class: 114
+      Script: {instanceID: 13618}
+    - Class: 114
+      Script: {instanceID: 13620}
+    - Class: 114
+      Script: {instanceID: 13622}
+    - Class: 114
+      Script: {instanceID: 13624}
+    - Class: 114
+      Script: {instanceID: 14700}
+    - Class: 114
+      Script: {instanceID: 14754}
+    - Class: 114
+      Script: {instanceID: 14856}
+    - Class: 114
+      Script: {instanceID: 15202}
+    - Class: 114
+      Script: {instanceID: 15266}
+    - Class: 114
+      Script: {instanceID: 16562}
+    - Class: 114
+      Script: {instanceID: 17626}
+    - Class: 114
+      Script: {instanceID: 17762}
+    - Class: 114
+      Script: {instanceID: 18110}
+    - Class: 114
+      Script: {instanceID: 18222}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 3614bae5f2ee7232eea55e930d1eb42d
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Components
+    className: VRCPickup
+  - hash:
+      serializedVersion: 2
+      Hash: f64fd37da5cb89243ec68b5026d70bb8
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: a77f31e936ed0bf8cd62853681764e6a
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Components
+    className: VRCAvatarPedestal
+  - hash:
+      serializedVersion: 2
+      Hash: aba7b2852ef61d175dd9602e7723d5e5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: a1f19ad47d3094e235f21b74dfc423a8
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessLayer
+  - hash:
+      serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 71f7f12b8d0f4fd73590db8bcb6d453c
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Bloom
+  - hash:
+      serializedVersion: 2
+      Hash: f542c1afca5bb4022f91fdda19b8d622
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: DepthOfField
+  - hash:
+      serializedVersion: 2
+      Hash: 6abba3d42d0f6290924fc694110c9b85
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UdonSharp.Video.UI
+    className: UIStyler
+  - hash:
+      serializedVersion: 2
+      Hash: 7ab0e790220bdca831fdd886b339039d
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 38bcb4d3f9a1812fd650f92e87a4cf64
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessProfile
+  - hash:
+      serializedVersion: 2
+      Hash: b475602d023347d057d21e725e32e4eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UdonSharp.Video.UI
+    className: UIStyleMarkup
+  - hash:
+      serializedVersion: 2
+      Hash: bad0f5a58d4b55ed1442379677ba2587
+    assemblyName: VRC.Udon.dll
+    namespaceName: VRC.Udon.ProgramSources
+    className: SerializedUdonProgramAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 074243274255da3fb0b365cce37118a4
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Video.Components.AVPro
+    className: VRCAVProVideoPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: f9dc66e5da0f7823b6a06ff965f647c1
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Video.Components.AVPro
+    className: VRCAVProVideoScreen
+  - hash:
+      serializedVersion: 2
+      Hash: 80af9204e1b77a7259e2cef614b82b95
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Video.Components.AVPro
+    className: VRCAVProVideoSpeaker
+  - hash:
+      serializedVersion: 2
+      Hash: dd867c8c1d1106545695dcd8e04e1339
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Components
+    className: VRCObjectSync
+  - hash:
+      serializedVersion: 2
+      Hash: cc1aac33f5125bbefd2909802811f14c
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Components
+    className: VRCSceneDescriptor
+  - hash:
+      serializedVersion: 2
+      Hash: 51b7e090b99b560b762f54d192de261e
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Components
+    className: VRCSpatialAudioSource
+  - hash:
+      serializedVersion: 2
+      Hash: 7f9fad37fadafd79f80625e7955b2849
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Components
+    className: VRCStation
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Components
+    className: VRCUiShape
+  - hash:
+      serializedVersion: 2
+      Hash: dd63145f82d7c518fcf5fc07271936ce
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Video.Components
+    className: VRCUnityVideoPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 334fd5bbf6288071bbb4458cad0b5e3c
+    assemblyName: VRCSDK3.dll
+    namespaceName: VRC.SDK3.Components
+    className: VRCUrlInputField
+  - hash:
+      serializedVersion: 2
+      Hash: 55caa267dabff880fc180f037fbb0fd0
+    assemblyName: VRC.Udon.dll
+    namespaceName: VRC.Udon
+    className: UdonBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: d6fc8d3165070298511ec776ea575626
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessResources
+  - hash:
+      serializedVersion: 2
+      Hash: a6c8d359c3afa26b2cc3ace3b9bd9420
+    assemblyName: BakeryRuntimeAssembly.dll
+    namespaceName: 
+    className: ftLightmapsStorage
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: f84d945e5e1ca985698660fc26e9657f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 207b8173f8decab204d4c537bf911a71
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UdonSharp.Video.UI
+    className: UIStyle
+  - hash:
+      serializedVersion: 2
+      Hash: d5630f96bd5a6a6eed7e1754c3fb8703
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessVolume
+  - hash:
+      serializedVersion: 2
+      Hash: ac6acd886c54c48c599ab5fed5781ea7
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: AmbientOcclusion
+  - hash:
+      serializedVersion: 2
+      Hash: 7072231382eb3c4871b3dd75ad0227e1
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: 5db75d920ffb77b623077e95eb9ecdb8
+    assemblyName: VRCCore-Editor.dll
+    namespaceName: VRC.Core
+    className: PipelineManager
+  platform: 19
+  scenePathNames:
+  - Assets/Scenes/MainHall.unity
+  playerPath: C:/Users/A/AppData/Local/Temp/DefaultCompany/Chair_game/scene-standalonewindows64-mainhall.vrcw

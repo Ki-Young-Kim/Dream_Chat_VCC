@@ -1,0 +1,130 @@
+.data_start
+    .export videoPlayer
+    .export maxDelay
+    .export delaySlider
+    .export delayReadout
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    videoPlayer: %VRCUdonUdonBehaviour, null
+    maxDelay: %SystemSingle, null
+    delaySlider: %UnityEngineUISlider, null
+    delayReadout: %UnityEngineUIText, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemObject_0: %SystemObject, null
+    __const_SystemString_0: %SystemString, null
+    __this_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, this
+    __const_SystemString_1: %SystemString, null
+    __const_SystemSingle_0: %SystemSingle, null
+    __const_SystemString_2: %SystemString, null
+    __const_SystemString_3: %SystemString, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+    __intnl_UnityEngineObject_1: %UnityEngineObject, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_UnityEngineObject_2: %UnityEngineObject, null
+    __lcl_sliderVal_SystemSingle_0: %SystemSingle, null
+    __lcl_timeValue_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemDouble_0: %SystemDouble, null
+    __intnl_SystemDouble_1: %SystemDouble, null
+    __intnl_SystemString_0: %SystemString, null
+    __intnl_SystemSingle_1: %SystemSingle, null
+    __intnl_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, null
+    __intnl_VRCUdonUdonBehaviour_1: %VRCUdonUdonBehaviour, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.Examples.SyncDelayManager.Start()
+# 
+        PUSH, videoPlayer
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x0000008c
+        PUSH, __this_VRCUdonUdonBehaviour_0
+        PUSH, __intnl_UnityEngineObject_2
+        COPY
+        PUSH, __const_SystemString_0
+        PUSH, __intnl_UnityEngineObject_2
+        EXTERN, "UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnSliderChange
+    OnSliderChange:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.Examples.SyncDelayManager.OnSliderChange()
+# 
+        PUSH, delaySlider
+        PUSH, __lcl_sliderVal_SystemSingle_0
+        EXTERN, "UnityEngineUISlider.__get_value__SystemSingle"
+        PUSH, __lcl_sliderVal_SystemSingle_0
+        PUSH, maxDelay
+        PUSH, __lcl_timeValue_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_timeValue_SystemSingle_0
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __intnl_SystemSingle_0
+        PUSH, __intnl_SystemDouble_0
+        EXTERN, "SystemConvert.__ToDouble__SystemSingle__SystemDouble"
+        PUSH, __intnl_SystemDouble_0
+        PUSH, __intnl_SystemDouble_1
+        EXTERN, "SystemMath.__Truncate__SystemDouble__SystemDouble"
+        PUSH, __intnl_SystemDouble_1
+        PUSH, __intnl_SystemInt32_0
+        EXTERN, "SystemConvert.__ToInt32__SystemDouble__SystemInt32"
+        PUSH, __const_SystemString_1
+        PUSH, __intnl_SystemInt32_0
+        PUSH, __intnl_SystemString_0
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, delayReadout
+        PUSH, __intnl_SystemString_0
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        PUSH, __lcl_timeValue_SystemSingle_0
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "SystemSingle.__op_UnaryMinus__SystemSingle__SystemSingle"
+        PUSH, videoPlayer
+        PUSH, __const_SystemString_2
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, videoPlayer
+# Cow dirty
+        PUSH, videoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        COPY
+        PUSH, __const_SystemString_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export OnResyncPress
+    OnResyncPress:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.Examples.SyncDelayManager.OnResyncPress()
+# 
+        PUSH, videoPlayer
+# Cow dirty
+        PUSH, videoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_1
+        COPY
+        PUSH, __const_SystemString_3
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

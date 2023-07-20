@@ -1,0 +1,35 @@
+.data_start
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    targetRenderer: %UnityEngineRenderer, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __this_UnityEngineTransform_0: %UnityEngineTransform, this
+    __const_SystemType_0: %SystemType, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.RendererGIUpdate.Start()
+# 
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __const_SystemType_0
+        PUSH, targetRenderer
+        EXTERN, "UnityEngineComponent.__GetComponent__T"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.RendererGIUpdate.Update()
+# 
+        PUSH, targetRenderer
+        EXTERN, "UnityEngineRendererExtensions.__UpdateGIMaterials__UnityEngineRenderer__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

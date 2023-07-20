@@ -1,0 +1,205 @@
+.data_start
+    .export round_cube1
+    .export round_cube2
+    .export round_cube3
+    .export circleR
+    .export deg
+    .export objSpeed
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    round_cube1: %UnityEngineGameObject, null
+    round_cube2: %UnityEngineGameObject, null
+    round_cube3: %UnityEngineGameObject, null
+    circleR: %SystemSingle, null
+    deg: %SystemSingle, null
+    objSpeed: %SystemSingle, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemSingle_0: %SystemSingle, null
+    __const_SystemSingle_1: %SystemSingle, null
+    __const_SystemSingle_2: %SystemSingle, null
+    __const_SystemSingle_3: %SystemSingle, null
+    __this_UnityEngineTransform_0: %UnityEngineTransform, this
+    __const_SystemSingle_4: %SystemSingle, null
+    __const_SystemSingle_5: %SystemSingle, null
+    __const_SystemSingle_6: %SystemSingle, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_1: %SystemSingle, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __lcl_rad_SystemSingle_0: %SystemSingle, null
+    __lcl_x_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_2: %SystemSingle, null
+    __lcl_y_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_3: %SystemSingle, null
+    __lcl_rad2_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_4: %SystemSingle, null
+    __lcl_x2_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_5: %SystemSingle, null
+    __lcl_y2_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_6: %SystemSingle, null
+    __lcl_rad3_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_7: %SystemSingle, null
+    __lcl_x3_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_8: %SystemSingle, null
+    __lcl_y3_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemSingle_9: %SystemSingle, null
+    __intnl_UnityEngineTransform_0: %UnityEngineTransform, null
+    __intnl_UnityEngineVector3_0: %UnityEngineVector3, null
+    __intnl_UnityEngineVector3_1: %UnityEngineVector3, null
+    __intnl_UnityEngineVector3_2: %UnityEngineVector3, null
+    __intnl_UnityEngineTransform_1: %UnityEngineTransform, null
+    __intnl_UnityEngineVector3_3: %UnityEngineVector3, null
+    __intnl_UnityEngineVector3_4: %UnityEngineVector3, null
+    __intnl_UnityEngineVector3_5: %UnityEngineVector3, null
+    __intnl_UnityEngineTransform_2: %UnityEngineTransform, null
+    __intnl_UnityEngineVector3_6: %UnityEngineVector3, null
+    __intnl_UnityEngineVector3_7: %UnityEngineVector3, null
+    __intnl_UnityEngineVector3_8: %UnityEngineVector3, null
+.data_end
+.code_start
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# round_code.Update()
+# 
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "UnityEngineTime.__get_deltaTime__SystemSingle"
+        PUSH, __intnl_SystemSingle_0
+        PUSH, objSpeed
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, deg
+        PUSH, __intnl_SystemSingle_1
+        PUSH, deg
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, deg
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x00000430
+        PUSH, __const_SystemSingle_1
+        PUSH, deg
+        PUSH, __lcl_rad_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_rad_SystemSingle_0
+        PUSH, __intnl_SystemSingle_2
+        EXTERN, "UnityEngineMathf.__Sin__SystemSingle__SystemSingle"
+        PUSH, circleR
+        PUSH, __intnl_SystemSingle_2
+        PUSH, __lcl_x_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_rad_SystemSingle_0
+        PUSH, __intnl_SystemSingle_3
+        EXTERN, "UnityEngineMathf.__Cos__SystemSingle__SystemSingle"
+        PUSH, circleR
+        PUSH, __intnl_SystemSingle_3
+        PUSH, __lcl_y_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, deg
+        PUSH, __const_SystemSingle_2
+        PUSH, __intnl_SystemSingle_4
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __const_SystemSingle_1
+        PUSH, __intnl_SystemSingle_4
+        PUSH, __lcl_rad2_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_rad2_SystemSingle_0
+        PUSH, __intnl_SystemSingle_5
+        EXTERN, "UnityEngineMathf.__Sin__SystemSingle__SystemSingle"
+        PUSH, circleR
+        PUSH, __intnl_SystemSingle_5
+        PUSH, __lcl_x2_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_rad2_SystemSingle_0
+        PUSH, __intnl_SystemSingle_6
+        EXTERN, "UnityEngineMathf.__Cos__SystemSingle__SystemSingle"
+        PUSH, circleR
+        PUSH, __intnl_SystemSingle_6
+        PUSH, __lcl_y2_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, deg
+        PUSH, __const_SystemSingle_3
+        PUSH, __intnl_SystemSingle_7
+        EXTERN, "SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __const_SystemSingle_1
+        PUSH, __intnl_SystemSingle_7
+        PUSH, __lcl_rad3_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_rad3_SystemSingle_0
+        PUSH, __intnl_SystemSingle_8
+        EXTERN, "UnityEngineMathf.__Sin__SystemSingle__SystemSingle"
+        PUSH, circleR
+        PUSH, __intnl_SystemSingle_8
+        PUSH, __lcl_x3_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, __lcl_rad3_SystemSingle_0
+        PUSH, __intnl_SystemSingle_9
+        EXTERN, "UnityEngineMathf.__Cos__SystemSingle__SystemSingle"
+        PUSH, circleR
+        PUSH, __intnl_SystemSingle_9
+        PUSH, __lcl_y3_SystemSingle_0
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, round_cube1
+        PUSH, __intnl_UnityEngineTransform_0
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineVector3_0
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __lcl_x_SystemSingle_0
+        PUSH, __lcl_y_SystemSingle_0
+        PUSH, __const_SystemSingle_4
+        PUSH, __intnl_UnityEngineVector3_1
+        EXTERN, "UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineVector3_0
+        PUSH, __intnl_UnityEngineVector3_1
+        PUSH, __intnl_UnityEngineVector3_2
+        EXTERN, "UnityEngineVector3.__op_Addition__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineVector3_2
+        EXTERN, "UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid"
+        PUSH, round_cube2
+        PUSH, __intnl_UnityEngineTransform_1
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineVector3_3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __lcl_x2_SystemSingle_0
+        PUSH, __lcl_y2_SystemSingle_0
+        PUSH, __const_SystemSingle_5
+        PUSH, __intnl_UnityEngineVector3_4
+        EXTERN, "UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineVector3_3
+        PUSH, __intnl_UnityEngineVector3_4
+        PUSH, __intnl_UnityEngineVector3_5
+        EXTERN, "UnityEngineVector3.__op_Addition__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineTransform_1
+        PUSH, __intnl_UnityEngineVector3_5
+        EXTERN, "UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid"
+        PUSH, round_cube3
+        PUSH, __intnl_UnityEngineTransform_2
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __this_UnityEngineTransform_0
+        PUSH, __intnl_UnityEngineVector3_6
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __lcl_x3_SystemSingle_0
+        PUSH, __lcl_y3_SystemSingle_0
+        PUSH, __const_SystemSingle_6
+        PUSH, __intnl_UnityEngineVector3_7
+        EXTERN, "UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineVector3_6
+        PUSH, __intnl_UnityEngineVector3_7
+        PUSH, __intnl_UnityEngineVector3_8
+        EXTERN, "UnityEngineVector3.__op_Addition__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3"
+        PUSH, __intnl_UnityEngineTransform_2
+        PUSH, __intnl_UnityEngineVector3_8
+        EXTERN, "UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid"
+        JUMP, 0x00000444
+        PUSH, __const_SystemSingle_4
+        PUSH, deg
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

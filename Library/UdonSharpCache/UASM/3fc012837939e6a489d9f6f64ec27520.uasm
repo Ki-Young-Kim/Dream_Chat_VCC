@@ -1,0 +1,50 @@
+.data_start
+    .export targetVideoPlayer
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    targetVideoPlayer: %VRCUdonUdonBehaviour, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemString_0: %SystemString, null
+    __const_SystemString_1: %SystemString, null
+    __this_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, this
+    __this_VRCUdonUdonBehaviour_1: %VRCUdonUdonBehaviour, this
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, null
+    __intnl_SystemString_0: %SystemString, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+.data_end
+.code_start
+    .export OnResyncButtonPress
+    OnResyncButtonPress:
+        PUSH, __const_SystemUInt32_0
+# 
+# UdonSharp.Video.Examples.ReloadButton.OnResyncButtonPress()
+# 
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x00000064
+        PUSH, targetVideoPlayer
+# Cow dirty
+        PUSH, targetVideoPlayer
+        PUSH, __intnl_VRCUdonUdonBehaviour_0
+        COPY
+        PUSH, __const_SystemString_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        JUMP, 0x000000B0
+        PUSH, __const_SystemString_1
+        PUSH, __this_VRCUdonUdonBehaviour_0
+        PUSH, __intnl_SystemString_0
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __this_VRCUdonUdonBehaviour_1
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __intnl_SystemString_0
+        PUSH, __intnl_UnityEngineObject_0
+        EXTERN, "UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end

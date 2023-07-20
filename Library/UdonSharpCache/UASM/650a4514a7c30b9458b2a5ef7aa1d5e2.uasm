@@ -1,0 +1,522 @@
+.data_start
+    .export proxyTexture
+    .export proxyTexture2
+    .export proxyTexture3
+    .export proxyTexture4
+    .export targetRenderTexture
+    .export Rigmae1
+    .export Rigmae2
+    .export Rigmae3
+    .export Rigmae4
+    .export _camera
+    .export gameobject1
+    .export gameobject2
+    .export gameobject3
+    __refl_typeid: %SystemInt64, null
+    __refl_typename: %SystemString, null
+    __intnl_returnJump_SystemUInt32_0: %SystemUInt32, null
+    proxyTexture: %UnityEngineTexture2D, null
+    proxyTexture2: %UnityEngineTexture2D, null
+    proxyTexture3: %UnityEngineTexture2D, null
+    proxyTexture4: %UnityEngineTexture2D, null
+    targetRenderTexture: %UnityEngineRenderTexture, null
+    Rigmae1: %UnityEngineUIRawImage, null
+    Rigmae2: %UnityEngineUIRawImage, null
+    Rigmae3: %UnityEngineUIRawImage, null
+    Rigmae4: %UnityEngineUIRawImage, null
+    _camera: %UnityEngineCamera, null
+    is_click: %SystemBoolean, null
+    cnt: %SystemInt32, null
+    gameobject1: %UnityEngineGameObject, null
+    gameobject2: %UnityEngineGameObject, null
+    gameobject3: %UnityEngineGameObject, null
+    __const_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemObject_0: %SystemObject, null
+    __const_SystemBoolean_0: %SystemBoolean, null
+    __const_UnityEngineKeyCode_0: %UnityEngineKeyCode, null
+    __this_VRCUdonUdonBehaviour_0: %VRCUdonUdonBehaviour, this
+    __const_VRCUdonCommonInterfacesNetworkEventTarget_0: %VRCUdonCommonInterfacesNetworkEventTarget, null
+    __const_SystemString_0: %SystemString, null
+    __const_UnityEngineKeyCode_1: %UnityEngineKeyCode, null
+    __this_VRCUdonUdonBehaviour_1: %VRCUdonUdonBehaviour, this
+    __const_UnityEngineKeyCode_2: %UnityEngineKeyCode, null
+    __this_VRCUdonUdonBehaviour_2: %VRCUdonUdonBehaviour, this
+    __const_SystemBoolean_1: %SystemBoolean, null
+    __this_VRCUdonUdonBehaviour_3: %VRCUdonUdonBehaviour, this
+    __gintnl_SystemUInt32_0: %SystemUInt32, null
+    __const_SystemString_1: %SystemString, null
+    __const_SystemString_2: %SystemString, null
+    __const_SystemString_3: %SystemString, null
+    __const_SystemInt32_0: %SystemInt32, null
+    __const_SystemInt32_1: %SystemInt32, null
+    __gintnl_SystemUInt32Array_0: %SystemUInt32Array, null
+    __const_SystemSingle_0: %SystemSingle, null
+    __const_SystemInt32_2: %SystemInt32, null
+    __const_SystemInt32_3: %SystemInt32, null
+    onPlayerTriggerEnterPlayer: %VRCSDKBaseVRCPlayerApi, null
+    __const_SystemString_4: %SystemString, null
+    __this_VRCUdonUdonBehaviour_4: %VRCUdonUdonBehaviour, this
+    __const_SystemString_5: %SystemString, null
+    __const_SystemSingle_1: %SystemSingle, null
+    __const_VRCUdonCommonEnumsEventTiming_0: %VRCUdonCommonEnumsEventTiming, null
+    __this_VRCUdonUdonBehaviour_5: %VRCUdonUdonBehaviour, this
+    __const_SystemString_6: %SystemString, null
+    __gintnl_SystemUInt32_1: %SystemUInt32, null
+    __this_VRCUdonUdonBehaviour_6: %VRCUdonUdonBehaviour, this
+    __const_SystemString_7: %SystemString, null
+    __const_SystemSingle_2: %SystemSingle, null
+    __this_VRCUdonUdonBehaviour_7: %VRCUdonUdonBehaviour, this
+    __const_SystemString_8: %SystemString, null
+    __const_SystemSingle_3: %SystemSingle, null
+    __this_VRCUdonUdonBehaviour_8: %VRCUdonUdonBehaviour, this
+    __const_SystemString_9: %SystemString, null
+    __const_SystemSingle_4: %SystemSingle, null
+    __intnl_UnityEngineRenderTexture_0: %UnityEngineRenderTexture, null
+    __intnl_UnityEngineObject_0: %UnityEngineObject, null
+    __intnl_UnityEngineObject_1: %UnityEngineObject, null
+    __intnl_SystemBoolean_0: %SystemBoolean, null
+    __intnl_SystemBoolean_1: %SystemBoolean, null
+    __intnl_SystemBoolean_2: %SystemBoolean, null
+    __intnl_SystemBoolean_3: %SystemBoolean, null
+    __intnl_SystemBoolean_4: %SystemBoolean, null
+    __intnl_SystemBoolean_5: %SystemBoolean, null
+    __intnl_SystemBoolean_6: %SystemBoolean, null
+    __intnl_SystemUInt32_0: %SystemUInt32, null
+    __intnl_SystemBoolean_7: %SystemBoolean, null
+    __intnl_SystemInt32_0: %SystemInt32, null
+    __intnl_SystemSingle_0: %SystemSingle, null
+    __intnl_SystemInt32_1: %SystemInt32, null
+    __intnl_SystemSingle_1: %SystemSingle, null
+    __intnl_UnityEngineRect_0: %UnityEngineRect, null
+    __intnl_UnityEngineTexture_0: %UnityEngineTexture, null
+    __intnl_SystemInt32_2: %SystemInt32, null
+    __intnl_SystemSingle_2: %SystemSingle, null
+    __intnl_SystemInt32_3: %SystemInt32, null
+    __intnl_SystemSingle_3: %SystemSingle, null
+    __intnl_UnityEngineRect_1: %UnityEngineRect, null
+    __intnl_UnityEngineTexture_1: %UnityEngineTexture, null
+    __intnl_SystemInt32_4: %SystemInt32, null
+    __intnl_SystemSingle_4: %SystemSingle, null
+    __intnl_SystemInt32_5: %SystemInt32, null
+    __intnl_SystemSingle_5: %SystemSingle, null
+    __intnl_UnityEngineRect_2: %UnityEngineRect, null
+    __intnl_UnityEngineTexture_2: %UnityEngineTexture, null
+    __intnl_SystemInt32_6: %SystemInt32, null
+    __intnl_SystemSingle_6: %SystemSingle, null
+    __intnl_SystemInt32_7: %SystemInt32, null
+    __intnl_SystemSingle_7: %SystemSingle, null
+    __intnl_UnityEngineRect_3: %UnityEngineRect, null
+    __intnl_UnityEngineTexture_3: %UnityEngineTexture, null
+.data_end
+.code_start
+    .export _start
+    _start:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.Start()
+# 
+        PUSH, _camera
+        PUSH, __intnl_UnityEngineRenderTexture_0
+        EXTERN, "UnityEngineCamera.__get_targetTexture__UnityEngineRenderTexture"
+        PUSH, __intnl_UnityEngineRenderTexture_0
+        PUSH, __intnl_UnityEngineObject_0
+        COPY
+        PUSH, __const_SystemObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        COPY
+        PUSH, __intnl_UnityEngineObject_0
+        PUSH, __intnl_UnityEngineObject_1
+        PUSH, __intnl_SystemBoolean_0
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_0
+        JUMP_IF_FALSE, 0x00000090
+        PUSH, _camera
+        PUSH, targetRenderTexture
+        EXTERN, "UnityEngineCamera.__set_targetTexture__UnityEngineRenderTexture__SystemVoid"
+        PUSH, gameobject1
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, gameobject2
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, gameobject3
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _update
+    _update:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.Update()
+# 
+        PUSH, __const_UnityEngineKeyCode_0
+        PUSH, __intnl_SystemBoolean_1
+        EXTERN, "UnityEngineInput.__GetKeyDown__UnityEngineKeyCode__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_1
+        JUMP_IF_FALSE, 0x0000013c
+        PUSH, __this_VRCUdonUdonBehaviour_0
+        PUSH, __const_VRCUdonCommonInterfacesNetworkEventTarget_0
+        PUSH, __const_SystemString_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __const_UnityEngineKeyCode_1
+        PUSH, __intnl_SystemBoolean_2
+        EXTERN, "UnityEngineInput.__GetKeyDown__UnityEngineKeyCode__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_2
+        JUMP_IF_FALSE, 0x00000184
+        PUSH, __this_VRCUdonUdonBehaviour_1
+        PUSH, __const_VRCUdonCommonInterfacesNetworkEventTarget_0
+        PUSH, __const_SystemString_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __const_UnityEngineKeyCode_2
+        PUSH, __intnl_SystemBoolean_3
+        EXTERN, "UnityEngineInput.__GetKeyDown__UnityEngineKeyCode__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_3
+        JUMP_IF_FALSE, 0x000001cc
+        PUSH, __this_VRCUdonUdonBehaviour_2
+        PUSH, __const_VRCUdonCommonInterfacesNetworkEventTarget_0
+        PUSH, __const_SystemString_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export set_3
+    set_3:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.set_3()
+# 
+        PUSH, gameobject3
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export set_2
+    set_2:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.set_2()
+# 
+        PUSH, gameobject3
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, gameobject2
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export set_1
+    set_1:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.set_1()
+# 
+        PUSH, gameobject2
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, gameobject1
+        PUSH, __const_SystemBoolean_1
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export set_0
+    set_0:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.set_0()
+# 
+        PUSH, gameobject1
+        PUSH, __const_SystemBoolean_0
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export network_is_click_true
+    network_is_click_true:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.network_is_click_true()
+# 
+        PUSH, __this_VRCUdonUdonBehaviour_3
+        PUSH, __const_VRCUdonCommonInterfacesNetworkEventTarget_0
+        PUSH, __const_SystemString_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export is_click_true
+    is_click_true:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.is_click_true()
+# 
+        PUSH, __const_SystemBoolean_1
+        PUSH, is_click
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onPostRender
+    _onPostRender:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.OnPostRender()
+# 
+        PUSH, is_click
+        PUSH, __const_SystemBoolean_1
+        PUSH, __intnl_SystemBoolean_4
+        EXTERN, "SystemBoolean.__op_Equality__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_4
+        JUMP_IF_FALSE, 0x000003b8
+        PUSH, __gintnl_SystemUInt32_0
+# Calling test_light.Capture()
+        JUMP, 0x0000042C
+        PUSH, __const_SystemString_1
+        EXTERN, "UnityEngineDebug.__Log__SystemObject__SystemVoid"
+        PUSH, __const_SystemBoolean_0
+        PUSH, is_click
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export log_message
+    log_message:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.log_message()
+# 
+        PUSH, __const_SystemString_2
+        EXTERN, "UnityEngineDebug.__Log__SystemObject__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export message
+    message:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.message()
+# 
+        PUSH, __const_SystemString_3
+        EXTERN, "UnityEngineDebug.__Log__SystemObject__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export Capture
+    Capture:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.Capture()
+# 
+        PUSH, cnt
+        PUSH, __const_SystemInt32_0
+        PUSH, __intnl_SystemBoolean_5
+        EXTERN, "SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_5
+        JUMP_IF_FALSE, 0x000008a4
+        PUSH, cnt
+        PUSH, __const_SystemInt32_1
+        PUSH, __intnl_SystemBoolean_6
+        EXTERN, "SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_6
+        JUMP_IF_FALSE, 0x000008a4
+        PUSH, __gintnl_SystemUInt32Array_0
+        PUSH, cnt
+        PUSH, __intnl_SystemUInt32_0
+        EXTERN, "SystemUInt32Array.__Get__SystemInt32__SystemUInt32"
+        JUMP_INDIRECT, __intnl_SystemUInt32_0
+        PUSH, proxyTexture
+        PUSH, __intnl_SystemInt32_0
+        EXTERN, "UnityEngineTexture.__get_width__SystemInt32"
+        PUSH, __intnl_SystemInt32_0
+        PUSH, __intnl_SystemSingle_0
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, proxyTexture
+        PUSH, __intnl_SystemInt32_1
+        EXTERN, "UnityEngineTexture.__get_height__SystemInt32"
+        PUSH, __intnl_SystemInt32_1
+        PUSH, __intnl_SystemSingle_1
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __const_SystemSingle_0
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemSingle_0
+        PUSH, __intnl_SystemSingle_1
+        PUSH, __intnl_UnityEngineRect_0
+        EXTERN, "UnityEngineRect.__ctor__SystemSingle_SystemSingle_SystemSingle_SystemSingle__UnityEngineRect"
+        PUSH, proxyTexture
+        PUSH, __intnl_UnityEngineRect_0
+        PUSH, __const_SystemInt32_0
+        PUSH, __const_SystemInt32_0
+        EXTERN, "UnityEngineTexture2D.__ReadPixels__UnityEngineRect_SystemInt32_SystemInt32__SystemVoid"
+        PUSH, proxyTexture
+        EXTERN, "UnityEngineTexture2D.__Apply__SystemVoid"
+        PUSH, proxyTexture
+        PUSH, __intnl_UnityEngineTexture_0
+        COPY
+        PUSH, Rigmae1
+        PUSH, __intnl_UnityEngineTexture_0
+        EXTERN, "UnityEngineUIRawImage.__set_texture__UnityEngineTexture__SystemVoid"
+        JUMP, 0x000008A4
+        PUSH, proxyTexture2
+        PUSH, __intnl_SystemInt32_2
+        EXTERN, "UnityEngineTexture.__get_width__SystemInt32"
+        PUSH, __intnl_SystemInt32_2
+        PUSH, __intnl_SystemSingle_2
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, proxyTexture2
+        PUSH, __intnl_SystemInt32_3
+        EXTERN, "UnityEngineTexture.__get_height__SystemInt32"
+        PUSH, __intnl_SystemInt32_3
+        PUSH, __intnl_SystemSingle_3
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __const_SystemSingle_0
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemSingle_2
+        PUSH, __intnl_SystemSingle_3
+        PUSH, __intnl_UnityEngineRect_1
+        EXTERN, "UnityEngineRect.__ctor__SystemSingle_SystemSingle_SystemSingle_SystemSingle__UnityEngineRect"
+        PUSH, proxyTexture2
+        PUSH, __intnl_UnityEngineRect_1
+        PUSH, __const_SystemInt32_0
+        PUSH, __const_SystemInt32_0
+        EXTERN, "UnityEngineTexture2D.__ReadPixels__UnityEngineRect_SystemInt32_SystemInt32__SystemVoid"
+        PUSH, proxyTexture2
+        EXTERN, "UnityEngineTexture2D.__Apply__SystemVoid"
+        PUSH, proxyTexture2
+        PUSH, __intnl_UnityEngineTexture_1
+        COPY
+        PUSH, Rigmae2
+        PUSH, __intnl_UnityEngineTexture_1
+        EXTERN, "UnityEngineUIRawImage.__set_texture__UnityEngineTexture__SystemVoid"
+        JUMP, 0x000008A4
+        PUSH, proxyTexture3
+        PUSH, __intnl_SystemInt32_4
+        EXTERN, "UnityEngineTexture.__get_width__SystemInt32"
+        PUSH, __intnl_SystemInt32_4
+        PUSH, __intnl_SystemSingle_4
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, proxyTexture3
+        PUSH, __intnl_SystemInt32_5
+        EXTERN, "UnityEngineTexture.__get_height__SystemInt32"
+        PUSH, __intnl_SystemInt32_5
+        PUSH, __intnl_SystemSingle_5
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __const_SystemSingle_0
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemSingle_4
+        PUSH, __intnl_SystemSingle_5
+        PUSH, __intnl_UnityEngineRect_2
+        EXTERN, "UnityEngineRect.__ctor__SystemSingle_SystemSingle_SystemSingle_SystemSingle__UnityEngineRect"
+        PUSH, proxyTexture3
+        PUSH, __intnl_UnityEngineRect_2
+        PUSH, __const_SystemInt32_0
+        PUSH, __const_SystemInt32_0
+        EXTERN, "UnityEngineTexture2D.__ReadPixels__UnityEngineRect_SystemInt32_SystemInt32__SystemVoid"
+        PUSH, proxyTexture3
+        EXTERN, "UnityEngineTexture2D.__Apply__SystemVoid"
+        PUSH, proxyTexture3
+        PUSH, __intnl_UnityEngineTexture_2
+        COPY
+        PUSH, Rigmae3
+        PUSH, __intnl_UnityEngineTexture_2
+        EXTERN, "UnityEngineUIRawImage.__set_texture__UnityEngineTexture__SystemVoid"
+        JUMP, 0x000008A4
+        PUSH, proxyTexture4
+        PUSH, __intnl_SystemInt32_6
+        EXTERN, "UnityEngineTexture.__get_width__SystemInt32"
+        PUSH, __intnl_SystemInt32_6
+        PUSH, __intnl_SystemSingle_6
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, proxyTexture4
+        PUSH, __intnl_SystemInt32_7
+        EXTERN, "UnityEngineTexture.__get_height__SystemInt32"
+        PUSH, __intnl_SystemInt32_7
+        PUSH, __intnl_SystemSingle_7
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __const_SystemSingle_0
+        PUSH, __const_SystemSingle_0
+        PUSH, __intnl_SystemSingle_6
+        PUSH, __intnl_SystemSingle_7
+        PUSH, __intnl_UnityEngineRect_3
+        EXTERN, "UnityEngineRect.__ctor__SystemSingle_SystemSingle_SystemSingle_SystemSingle__UnityEngineRect"
+        PUSH, proxyTexture4
+        PUSH, __intnl_UnityEngineRect_3
+        PUSH, __const_SystemInt32_0
+        PUSH, __const_SystemInt32_0
+        EXTERN, "UnityEngineTexture2D.__ReadPixels__UnityEngineRect_SystemInt32_SystemInt32__SystemVoid"
+        PUSH, proxyTexture4
+        EXTERN, "UnityEngineTexture2D.__Apply__SystemVoid"
+        PUSH, proxyTexture4
+        PUSH, __intnl_UnityEngineTexture_3
+        COPY
+        PUSH, Rigmae4
+        PUSH, __intnl_UnityEngineTexture_3
+        EXTERN, "UnityEngineUIRawImage.__set_texture__UnityEngineTexture__SystemVoid"
+        JUMP, 0x000008A4
+        PUSH, cnt
+        PUSH, __const_SystemInt32_2
+        PUSH, cnt
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, cnt
+        PUSH, __const_SystemInt32_3
+        PUSH, __intnl_SystemBoolean_7
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __intnl_SystemBoolean_7
+        JUMP_IF_FALSE, 0x00000908
+        PUSH, __const_SystemInt32_0
+        PUSH, cnt
+        COPY
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export _onPlayerTriggerEnter
+    _onPlayerTriggerEnter:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.OnPlayerTriggerEnter(VRC.SDKBase.VRCPlayerApi)
+# 
+        PUSH, __const_SystemString_4
+        EXTERN, "UnityEngineDebug.__Log__SystemObject__SystemVoid"
+        PUSH, __this_VRCUdonUdonBehaviour_4
+        PUSH, __const_SystemString_5
+        PUSH, __const_SystemSingle_1
+        PUSH, __const_VRCUdonCommonEnumsEventTiming_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid"
+        PUSH, __this_VRCUdonUdonBehaviour_5
+        PUSH, __const_VRCUdonCommonInterfacesNetworkEventTarget_0
+        PUSH, __const_SystemString_6
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+    .export network_countdown
+    network_countdown:
+        PUSH, __const_SystemUInt32_0
+# 
+# test_light.network_countdown()
+# 
+        PUSH, __gintnl_SystemUInt32_1
+# Calling test_light.set_3()
+        JUMP, 0x000001E8
+        PUSH, __this_VRCUdonUdonBehaviour_6
+        PUSH, __const_SystemString_7
+        PUSH, __const_SystemSingle_2
+        PUSH, __const_VRCUdonCommonEnumsEventTiming_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid"
+        PUSH, __this_VRCUdonUdonBehaviour_7
+        PUSH, __const_SystemString_8
+        PUSH, __const_SystemSingle_3
+        PUSH, __const_VRCUdonCommonEnumsEventTiming_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid"
+        PUSH, __this_VRCUdonUdonBehaviour_8
+        PUSH, __const_SystemString_9
+        PUSH, __const_SystemSingle_4
+        PUSH, __const_VRCUdonCommonEnumsEventTiming_0
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid"
+        PUSH, __intnl_returnJump_SystemUInt32_0
+        COPY
+        JUMP_INDIRECT, __intnl_returnJump_SystemUInt32_0
+.code_end
